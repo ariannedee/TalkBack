@@ -16,6 +16,8 @@
 @synthesize image;
 @synthesize openEarsEventsObserver;
 @synthesize pocketsphinxController;
+@synthesize fliteController;
+@synthesize slt;
 
 
 LanguageModelGenerator *lmGenerator;
@@ -41,9 +43,14 @@ LanguageModelGenerator *lmGenerator;
 {
 	// OpenEar Language model generator
 	lmGenerator = [[LanguageModelGenerator alloc] init];
-	NSArray *words = [NSArray arrayWithObjects:@"WORD", @"STATEMENT", @"OTHER WORD", @"A PHRASE", nil];
+	NSArray *words1 = [NSArray arrayWithObjects:@"BALLS",@"B",@"ALL",@"BA",@"BU",@"BO", nil];
+	NSArray *words2 = [NSArray arrayWithObjects:@"POPCORN", nil];
+	NSArray *words3 = [NSArray arrayWithObjects:@"DOG", nil];
+	NSArray *words4 = [NSArray arrayWithObjects:@"JUICE", nil];
+	NSArray *words5 = [NSArray arrayWithObjects:@"COMPUTER", nil];
+	
 	NSString *name = @"LanguageModelFile";
-	NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name];
+	NSError *err = [lmGenerator generateLanguageModelFromArray:words1 withFilesNamed:name];
 	
 	NSDictionary *languageGeneratorResults = nil;
 	NSString *lmPath = nil;
@@ -108,9 +115,31 @@ LanguageModelGenerator *lmGenerator;
 	return pocketsphinxController;
 }
 
+- (FliteController *)fliteController {
+	if (fliteController == nil) {
+		fliteController = [[FliteController alloc] init];
+	}
+	return fliteController;
+}
+
+- (Slt *)slt {
+	if (slt == nil) {
+		slt = [[Slt alloc] init];
+	}
+	return slt;
+}
+
 // ** this is the method that we will work with the most. ** //
 - (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID {
 	NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
+	if(recognitionScore.intValue > -600 && recognitionScore.intValue < -10 && [hypothesis isEqualToString:@"BALLS"]){
+		[image setHighlighted:YES];
+	}else {
+		[self.fliteController say:@"BALLS" withVoice:self.slt];
+		[image setHighlighted:NO];
+
+	}
+
 }
 
 - (void) pocketsphinxDidStartCalibration {

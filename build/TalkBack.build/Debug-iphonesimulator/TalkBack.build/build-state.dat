@@ -1,7 +1,7 @@
 TTalkBack
 v7
 r0
-t385113764.408958
+t385152953.568549
 cCheck dependencies
 cProcessInfoPlistFile /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/Info.plist TalkBack/TalkBack-Info.plist
 cProcessPCH /var/folders/Or/OrMPlRBwHmGjqoaCCX70pk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TalkBack-Prefix-bzmywxtdvvxhdgczptoubbaizmdb/TalkBack-Prefix.pch.gch TalkBack/TalkBack-Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
@@ -39,6 +39,11 @@ N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3
 c000000004D5EBEC300000000001340C0
 t1298054851
 s1261760
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.h
+c000000004D5EBEBB00000000000007D0
+t1298054843
+s2000
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
 c000000004D54CF5D0000000000205F50
@@ -80,6 +85,31 @@ c000000004D4F7A2B0000000000001B19
 t1297054251
 s6937
 
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/dispatch/dispatch.h
+c000000004D54CAE900000000000005E9
+t1297402601
+s1513
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/setjmp.h
+c000000004D4F6E990000000000000438
+t1297051289
+s1080
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/stdio.h
+c000000004D4F6E9A0000000000004763
+t1297051290
+s18275
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/stdlib.h
+c000000004D4F6E9A00000000000030A7
+t1297051290
+s12455
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/string.h
+c000000004D4F6E9A0000000000001A3A
+t1297051290
+s6714
+
 N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/AudioConstants.h
 c0000000050EAE8E400000000000007C7
 t1357572324
@@ -108,6 +138,24 @@ t1357572324
 s3238
 i"ContinuousAudioUnit.h"
 
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/FliteController.h
+c0000000050EAE8E40000000000001172
+t1357572324
+s4466
+i<AVFoundation/AVFoundation.h>
+i"OpenEarsEventsObserver.h"
+i"AudioConstants.h"
+i"flite.h"
+i"FliteVoice.h"
+i<dispatch/dispatch.h>
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/FliteVoice.h
+c0000000050EAE8E400000000000003A3
+t1357572324
+s931
+i<Foundation/Foundation.h>
+i"flite.h"
+
 N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/LanguageModelGenerator.h
 c0000000050EAE8E40000000000001031
 t1357572324
@@ -131,6 +179,251 @@ N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/Runti
 c0000000050EAE8E40000000000000237
 t1357572324
 s567
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_alloc.h
+c0000000050EAE8E4000000000000109B
+t1357572324
+s4251
+i<windows.h>
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_audio.h
+c0000000050EAE8E40000000000001595
+t1357572324
+s5525
+i"cst_wave.h"
+i"cst_hrg.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_cart.h
+c0000000050EAE8E40000000000000F10
+t1357572324
+s3856
+i"cst_file.h"
+i"cst_val.h"
+i"cst_features.h"
+i"cst_item.h"
+i"cst_relation.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_endian.h
+c0000000050EAE8E40000000000000FA4
+t1357572324
+s4004
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_error.h
+c0000000050EAE8E40000000000000F87
+t1357572324
+s3975
+i<stdlib.h>
+i<setjmp.h>
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_features.h
+c0000000050EAE8E40000000000001268
+t1357572324
+s4712
+i"cst_alloc.h"
+i"cst_val.h"
+i"cst_string.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_file.h
+c0000000050EAE8E4000000000000134C
+t1357572324
+s4940
+i<windows.h>
+i<winbase.h>
+i<PalmOS.h>
+i<System/StdIOPalm.h>
+i<stdio.h>
+i<windows.h>
+i<stdarg.h>
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_hrg.h
+c0000000050EAE8E40000000000000C57
+t1357572324
+s3159
+i"cst_file.h"
+i"cst_val.h"
+i"cst_features.h"
+i"cst_item.h"
+i"cst_relation.h"
+i"cst_utterance.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_item.h
+c0000000050EAE8E40000000000001957
+t1357572324
+s6487
+i"cst_file.h"
+i"cst_features.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_lexicon.h
+c0000000050EAE8E40000000000001192
+t1357572324
+s4498
+i"cst_item.h"
+i"cst_lts.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_lts.h
+c0000000050EAE8E40000000000000F89
+t1357572324
+s3977
+i"cst_val.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_phoneset.h
+c0000000050EAE8E40000000000000F7F
+t1357572324
+s3967
+i"cst_file.h"
+i"cst_val.h"
+i"cst_features.h"
+i"cst_item.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_regex.h
+c0000000050EAE8E40000000000001E4B
+t1357572324
+s7755
+i"cst_file.h"
+i"cst_string.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_relation.h
+c0000000050EAE8E40000000000000EC7
+t1357572324
+s3783
+i"cst_file.h"
+i"cst_val.h"
+i"cst_features.h"
+i"cst_item.h"
+i"cst_utterance.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_string.h
+c0000000050EAE8E40000000000000F83
+t1357572324
+s3971
+i<string.h>
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_sts.h
+c0000000050EAE8E400000000000017C4
+t1357572324
+s6084
+i"cst_wave.h"
+i"cst_audio.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_synth.h
+c0000000050EAE8E40000000000001261
+t1357572324
+s4705
+i"cst_hrg.h"
+i"cst_tokenstream.h"
+i"cst_voice.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_tokenstream.h
+c0000000050EAE8E40000000000001564
+t1357572324
+s5476
+i"cst_alloc.h"
+i"cst_string.h"
+i"cst_file.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_track.h
+c0000000050EAE8E40000000000000E83
+t1357572324
+s3715
+i"cst_file.h"
+i"cst_error.h"
+i"cst_alloc.h"
+i"cst_endian.h"
+i"cst_file.h"
+i"cst_val.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_units.h
+c0000000050EAE8E40000000000000E70
+t1357572324
+s3696
+i"cst_file.h"
+i"cst_hrg.h"
+i"cst_sts.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_utt_utils.h
+c0000000050EAE8E40000000000000EE6
+t1357572324
+s3814
+i"cst_hrg.h"
+i"cst_wave.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_utterance.h
+c0000000050EAE8E40000000000000FD2
+t1357572324
+s4050
+i"cst_file.h"
+i"cst_val.h"
+i"cst_features.h"
+i"cst_item.h"
+i"cst_relation.h"
+i"cst_alloc.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_val.h
+c0000000050EAE8E40000000000001870
+t1357572324
+s6256
+i"cst_file.h"
+i"cst_string.h"
+i"cst_error.h"
+i"cst_alloc.h"
+i"cst_val_defs.h"
+i"cst_val_const.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_val_const.h
+c0000000050EAE8E400000000000040B8
+t1357572324
+s16568
+i"cst_val_defs.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_val_defs.h
+c0000000050EAE8E400000000000018BB
+t1357572324
+s6331
+i<stdlib.h>
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_voice.h
+c0000000050EAE8E40000000000000E5E
+t1357572324
+s3678
+i"cst_file.h"
+i"cst_val.h"
+i"cst_features.h"
+i"cst_utterance.h"
+i"cst_relation.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/cst_wave.h
+c0000000050EAE8E40000000000001AC5
+t1357572324
+s6853
+i"cst_file.h"
+i"cst_error.h"
+i"cst_alloc.h"
+i"cst_endian.h"
+i"cst_file.h"
+i"cst_val.h"
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/flite.h
+c0000000050EAE8E400000000000016F8
+t1357572324
+s5880
+i"cst_string.h"
+i"cst_regex.h"
+i"cst_val.h"
+i"cst_features.h"
+i"cst_item.h"
+i"cst_relation.h"
+i"cst_utterance.h"
+i"cst_wave.h"
+i"cst_track.h"
+i"cst_cart.h"
+i"cst_phoneset.h"
+i"cst_voice.h"
+i"cst_audio.h"
+i"cst_utt_utils.h"
+i"cst_lexicon.h"
+i"cst_synth.h"
+i"cst_units.h"
+i"cst_tokenstream.h"
 
 N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEars.framework/Headers/prim_type.h
 c0000000050EAE8E4000000000000167B
@@ -172,6 +465,12 @@ N/Users/fe/Documents/ios_dev/TalkBack/Framework/OpenEarsCorpus.txt
 c0000000050EAE8E4000000000000004E
 t1357572324
 s78
+
+N/Users/fe/Documents/ios_dev/TalkBack/Framework/Slt.framework/Headers/Slt.h
+c0000000050EAE8E400000000000000BF
+t1357572324
+s191
+i<OpenEars/FliteVoice.h>
 
 N/Users/fe/Documents/ios_dev/TalkBack/Framework/Slt.framework/Slt
 c0000000050EAE8E40000000000A57E84
@@ -240,17 +539,19 @@ i"TalkBackAppDelegate.h"
 i"TalkBackViewController.h"
 
 N/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.h
-c00000000514423980000000000000301
-t1363420056
-s769
+c000000005144BBB200000000000003D0
+t1363458994
+s976
 i<UIKit/UIKit.h>
+i<Slt/Slt.h>
+i<OpenEars/FliteController.h>
 i<OpenEars/OpenEarsEventsObserver.h>
 i<OpenEars/PocketsphinxController.h>
 
 N/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m
-c00000000514427070000000000001213
-t1363420935
-s4627
+c000000005144BCA30000000000001511
+t1363459235
+s5393
 i"TalkBackViewController.h"
 i<OpenEars/LanguageModelGenerator.h>
 
@@ -276,11 +577,11 @@ s356
 i<UIKit/UIKit.h>
 
 N/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app
-t1363420939
+t1363460153
 s714
 
 N/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app.dSYM
-t1363420939
+t1363460153
 s102
 
 N/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/Info.plist
@@ -312,8 +613,8 @@ t1363419953
 s8
 
 N/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/TalkBack
-t1363420939
-s3587136
+t1363460153
+s6864680
 
 N/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/cmu07a.dic
 t1363419954
@@ -373,12 +674,12 @@ t1363419953
 s399
 
 N/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/Objects-normal/i386/TalkBackAppDelegate.o
-t1363420224
-s51536
+t1363459049
+s53444
 
 N/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/Objects-normal/i386/TalkBackViewController.o
-t1363420939
-s60412
+t1363460152
+s67220
 
 N/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/Objects-normal/i386/main.o
 t1363419953
@@ -409,11 +710,11 @@ s1188
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies385113764#385113764#0(0"0(0#1#0"8622659776#0"0#
+lSLF07#2@18"Check dependencies385152952#385152952#0(0"0(0#1#0"8617135808#0"0#
 
 CCompileC build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/Objects-normal/i386/TalkBackAppDelegate.o /Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackAppDelegate.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s385113024.849282
-e385113024.971798
+s385151849.382937
+e385151849.588631
 r1
 xCompileC
 xbuild/TalkBack.build/Debug-iphonesimulator/TalkBack.build/Objects-normal/i386/TalkBackAppDelegate.o
@@ -422,11 +723,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF07#2@75"Compile /Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackAppDelegate.m385113024#385113024#0(0"0(0#0#67"/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackAppDelegate.m8620877920#1995"    cd /Users/fe/Documents/ios_dev/TalkBack    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-generated-files.hmap -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-own-target-headers.hmap -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-all-target-headers.hmap -iquote /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-project-headers.hmap -F/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator -F/Users/fe/Documents/ios_dev/TalkBack/Framework -I/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/include -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/DerivedSources/i386 -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/DerivedSources -include /var/folders/Or/OrMPlRBwHmGjqoaCCX70pk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TalkBack-Prefix-bzmywxtdvvxhdgczptoubbaizmdb/TalkBack-Prefix.pch -c /Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackAppDelegate.m -o /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/Objects-normal/i386/TalkBackAppDelegate.o0#
+lSLF07#2@75"Compile /Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackAppDelegate.m385151849#385151849#0(0"0(0#0#67"/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackAppDelegate.m8618035392#1995"    cd /Users/fe/Documents/ios_dev/TalkBack    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-generated-files.hmap -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-own-target-headers.hmap -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-all-target-headers.hmap -iquote /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-project-headers.hmap -F/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator -F/Users/fe/Documents/ios_dev/TalkBack/Framework -I/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/include -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/DerivedSources/i386 -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/DerivedSources -include /var/folders/Or/OrMPlRBwHmGjqoaCCX70pk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TalkBack-Prefix-bzmywxtdvvxhdgczptoubbaizmdb/TalkBack-Prefix.pch -c /Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackAppDelegate.m -o /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/Objects-normal/i386/TalkBackAppDelegate.o0#
 
 CCompileC build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/Objects-normal/i386/TalkBackViewController.o /Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s385113739.570272
-e385113739.728346
+s385152952.756076
+e385152952.969949
 r1
 xCompileC
 xbuild/TalkBack.build/Debug-iphonesimulator/TalkBack.build/Objects-normal/i386/TalkBackViewController.o
@@ -435,7 +736,12 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF07#2@78"Compile /Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m385113739#385113739#0(0"0(0#0#70"/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m8621619136#2001"    cd /Users/fe/Documents/ios_dev/TalkBack    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-generated-files.hmap -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-own-target-headers.hmap -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-all-target-headers.hmap -iquote /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-project-headers.hmap -F/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator -F/Users/fe/Documents/ios_dev/TalkBack/Framework -I/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/include -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/DerivedSources/i386 -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/DerivedSources -include /var/folders/Or/OrMPlRBwHmGjqoaCCX70pk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TalkBack-Prefix-bzmywxtdvvxhdgczptoubbaizmdb/TalkBack-Prefix.pch -c /Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m -o /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/Objects-normal/i386/TalkBackViewController.o0#
+o/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m: In function '-[TalkBackViewController viewDidLoad]':
+o/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m:50: warning: unused variable 'words5'
+o/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m:49: warning: unused variable 'words4'
+o/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m:48: warning: unused variable 'words3'
+o/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m:47: warning: unused variable 'words2'
+lSLF07#2@78"Compile /Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m385152952#385152952#0(561"/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m: In function '-[TalkBackViewController viewDidLoad]':/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m:50: warning: unused variable 'words5'/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m:49: warning: unused variable 'words4'/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m:48: warning: unused variable 'words3'/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m:47: warning: unused variable 'words2'4(22@24"Unused variable 'words5'385152952#125#109#0(6@70"/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m385152035#50#0#50#0#19"unused variable '*'0(22@24"Unused variable 'words4'385152952#234#109#0(6@70"/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m385152035#49#0#49#0#19"unused variable '*'0(22@24"Unused variable 'words3'385152952#343#109#0(6@70"/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m385152035#48#0#48#0#19"unused variable '*'0(22@24"Unused variable 'words2'385152952#452#109#0(6@70"/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m385152035#47#0#47#0#19"unused variable '*'0(0#0#70"/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m8617933312#2001"    cd /Users/fe/Documents/ios_dev/TalkBack    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-generated-files.hmap -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-own-target-headers.hmap -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-all-target-headers.hmap -iquote /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-project-headers.hmap -F/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator -F/Users/fe/Documents/ios_dev/TalkBack/Framework -I/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/include -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/DerivedSources/i386 -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/DerivedSources -include /var/folders/Or/OrMPlRBwHmGjqoaCCX70pk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TalkBack-Prefix-bzmywxtdvvxhdgczptoubbaizmdb/TalkBack-Prefix.pch -c /Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBackViewController.m -o /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/Objects-normal/i386/TalkBackViewController.o0#
 
 CCompileC build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/Objects-normal/i386/main.o /Users/fe/Documents/ios_dev/TalkBack/TalkBack/main.m normal i386 objective-c com.apple.compilers.llvmgcc42
 s385112753.765027
@@ -614,23 +920,23 @@ xFramework/hub4wsj_sc_8k/variances
 lSLF07#2@38"Copy Framework/hub4wsj_sc_8k/variances385112754#385112754#0(0"0(0#0#70"/Users/fe/Documents/ios_dev/TalkBack/Framework/hub4wsj_sc_8k/variances8617376192#486"    cd /Users/fe/Documents/ios_dev/TalkBack    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/fe/Documents/ios_dev/TalkBack/Framework/hub4wsj_sc_8k/variances /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app0#
 
 CGenerateDSYMFile /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app.dSYM /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/TalkBack
-s385113739.931862
-e385113739.956564
+s385152953.481027
+e385152953.563037
 r1
 xGenerateDSYMFile
 x/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app.dSYM
 x/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/TalkBack
-lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/TalkBack.app.dSYM build/Debug-iphonesimulator/TalkBack.app/TalkBack385113739#385113739#0(0"0(0#0#86"/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/TalkBack8613284160#380"    cd /Users/fe/Documents/ios_dev/TalkBack    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/TalkBack -o /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app.dSYM0#
+lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/TalkBack.app.dSYM build/Debug-iphonesimulator/TalkBack.app/TalkBack385152953#385152953#0(0"0(0#0#86"/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/TalkBack8619637600#380"    cd /Users/fe/Documents/ios_dev/TalkBack    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/TalkBack -o /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app.dSYM0#
 
 CLd /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/TalkBack normal i386
-s385113739.728470
-e385113739.931721
+s385152952.970042
+e385152953.480929
 r1
 xLd
 x/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/TalkBack
 xnormal
 xi386
-lSLF07#2@91"Link /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/TalkBack385113739#385113739#0(0"0(0#0#0"8621743872#1041"    cd /Users/fe/Documents/ios_dev/TalkBack    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator -F/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator -F/Users/fe/Documents/ios_dev/TalkBack/Framework -filelist /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/Objects-normal/i386/TalkBack.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework UIKit -framework Foundation -framework CoreGraphics -framework AVFoundation -framework AudioToolbox -framework OpenEars -framework Slt -prebind -o /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/TalkBack0#
+lSLF07#2@91"Link /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/TalkBack385152952#385152953#0(0"0(0#0#0"8617632096#1041"    cd /Users/fe/Documents/ios_dev/TalkBack    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator -F/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator -F/Users/fe/Documents/ios_dev/TalkBack/Framework -filelist /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/Objects-normal/i386/TalkBack.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework UIKit -framework Foundation -framework CoreGraphics -framework AVFoundation -framework AudioToolbox -framework OpenEars -framework Slt -prebind -o /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/TalkBack0#
 
 CProcessInfoPlistFile /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app/Info.plist TalkBack/TalkBack-Info.plist
 s385112753.089779
@@ -658,10 +964,10 @@ xcom.apple.compilers.llvmgcc42
 lSLF07#2@39"Precompile TalkBack/TalkBack-Prefix.pch385112753#385112753#0(0"0(0#0#65"/Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBack-Prefix.pch8622305824#1858"    cd /Users/fe/Documents/ios_dev/TalkBack    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-generated-files.hmap -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-own-target-headers.hmap -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-all-target-headers.hmap -iquote /Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/TalkBack-project-headers.hmap -F/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator -F/Users/fe/Documents/ios_dev/TalkBack/Framework -I/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/include -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/DerivedSources/i386 -I/Users/fe/Documents/ios_dev/TalkBack/build/TalkBack.build/Debug-iphonesimulator/TalkBack.build/DerivedSources -c /Users/fe/Documents/ios_dev/TalkBack/TalkBack/TalkBack-Prefix.pch -o /var/folders/Or/OrMPlRBwHmGjqoaCCX70pk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TalkBack-Prefix-bzmywxtdvvxhdgczptoubbaizmdb/TalkBack-Prefix.pch.gch0#
 
 CTouch /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app
-s385113739.957697
-e385113739.960337
+s385152953.564569
+e385152953.568479
 r1
 xTouch
 x/Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app
-lSLF07#2@83"Touch /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app385113739#385113739#0(0"0(0#0#0"8620850464#275"    cd /Users/fe/Documents/ios_dev/TalkBack    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app0#
+lSLF07#2@83"Touch /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app385152953#385152953#0(0"0(0#0#0"8619177536#275"    cd /Users/fe/Documents/ios_dev/TalkBack    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/fe/Documents/ios_dev/TalkBack/build/Debug-iphonesimulator/TalkBack.app0#
 
