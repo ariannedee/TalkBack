@@ -323,10 +323,6 @@
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>Item.h</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>8531A6E016F52F6900893996</string>
 										<key>history</key>
 										<array>
 											<string>851C298A16F4E8BA007ADBE8</string>
@@ -349,14 +345,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {672, 573}}</string>
+								<string>{{0, 0}, {672, 555}}</string>
 								<key>RubberWindowFrame</key>
 								<string>57 55 880 823 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>573pt</string>
+							<string>555pt</string>
 						</dict>
 						<dict>
 							<key>BecomeActive</key>
@@ -371,14 +367,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 578}, {672, 204}}</string>
+								<string>{{0, 560}, {672, 222}}</string>
 								<key>RubberWindowFrame</key>
 								<string>57 55 880 823 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>204pt</string>
+							<string>222pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -397,9 +393,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>8531A6D216F52C1500893996</string>
+				<string>8531A70016F5341B00893996</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>8531A6D316F52C1500893996</string>
+				<string>8531A70116F5341B00893996</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -537,12 +533,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>8531A6D716F52C1500893996</string>
-		<string>8531A6D416F52C1500893996</string>
-		<string>8531A6DA16F52C1500893996</string>
-		<string>8531A6DD16F52C1500893996</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
+		<string>8531A70316F5341B00893996</string>
 		<string>8540795916F45F7600021164</string>
 		<string>/Users/fe/Documents/ios_dev/TalkBack/TalkBack.xcodeproj</string>
 	</array>
@@ -568,7 +559,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TalkBackViewController.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -585,8 +576,6 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -626,7 +615,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>8540795916F45F7600021164</string>
-				<string>8531A6B916F522BC00893996</string>
+				<string>8531A70216F5341B00893996</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -639,7 +628,7 @@
 			<key>WindowToolGUID</key>
 			<string>8540795916F45F7600021164</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

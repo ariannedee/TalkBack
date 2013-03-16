@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4924F44C16F51522002796E1 /* ItemCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4924F44B16F51522002796E1 /* ItemCollection.m */; };
+		4924F45016F516FC002796E1 /* All in Resources */ = {isa = PBXBuildFile; fileRef = 4924F44F16F516FC002796E1 /* All */; };
 		55910BF216F4397800175880 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55910BF116F4397800175880 /* UIKit.framework */; };
 		55910BF416F4397800175880 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55910BF316F4397800175880 /* Foundation.framework */; };
 		55910BF616F4397800175880 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55910BF516F4397800175880 /* CoreGraphics.framework */; };
@@ -51,6 +53,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4924F44A16F51522002796E1 /* ItemCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCollection.h; sourceTree = "<group>"; };
+		4924F44B16F51522002796E1 /* ItemCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCollection.m; sourceTree = "<group>"; };
+		4924F44F16F516FC002796E1 /* All */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = All; sourceTree = "<group>"; };
 		55910BED16F4397800175880 /* TalkBack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkBack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55910BF116F4397800175880 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55910BF316F4397800175880 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,9 +123,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4924F44D16F516BA002796E1 /* DataSets */ = {
+			isa = PBXGroup;
+			children = (
+				4924F44E16F516C1002796E1 /* Collections */,
+			);
+			name = DataSets;
+			sourceTree = "<group>";
+		};
+		4924F44E16F516C1002796E1 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				4924F44F16F516FC002796E1 /* All */,
+			);
+			name = Collections;
+			sourceTree = "<group>";
+		};
 		55910BE216F4397600175880 = {
 			isa = PBXGroup;
 			children = (
+				4924F44D16F516BA002796E1 /* DataSets */,
 				8531A69916F5136000893996 /* Model */,
 				8540787716F44E3E00021164 /* Framework */,
 				55910C1116F4479000175880 /* Media */,
@@ -201,6 +223,8 @@
 			children = (
 				8531A69A16F5136000893996 /* Item.h */,
 				8531A69B16F5136000893996 /* Item.m */,
+				4924F44A16F51522002796E1 /* ItemCollection.h */,
+				4924F44B16F51522002796E1 /* ItemCollection.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,6 +336,7 @@
 				6ED274EC16F521C2000E260F /* popcorn_04.png in Resources */,
 				6ED274ED16F521C2000E260F /* popcorn_05.png in Resources */,
 				6ED274EE16F521C2000E260F /* popcorn_06.png in Resources */,
+				4924F45016F516FC002796E1 /* All in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +351,7 @@
 				55910C0216F4397800175880 /* TalkBackAppDelegate.m in Sources */,
 				55910C0816F4397900175880 /* TalkBackViewController.m in Sources */,
 				8531A69C16F5136000893996 /* Item.m in Sources */,
+				4924F44C16F51522002796E1 /* ItemCollection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

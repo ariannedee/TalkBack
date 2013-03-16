@@ -73,7 +73,7 @@ NSArray *itemModelArray;
 // and swap the dictionary for sphinx controller
 - (void)loadViewWithItem: (NSInteger)modelIdx
 {
-	
+
 	NSString* lmPath = @""; // path from model
 	NSString* dictPath = @""; // path from model
 	[self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:lmPath languageModelIsJSGF:NO];

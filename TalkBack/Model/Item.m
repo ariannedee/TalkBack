@@ -35,6 +35,9 @@
 
 -(void)dealloc{
     self.displayName = nil;
+    self.possibleSounds = nil;
+    self.animationUrl = nil;
+    self.animationImages = nil;
     [super dealloc];
 }
 
