@@ -7,6 +7,8 @@
 //
 
 #import "ItemCollection.h"
+#import "Item.h"
+#import <OpenEars/LanguageModelGenerator.h>
 
 @implementation ItemCollection
 
@@ -21,4 +23,31 @@
 //       
 //   }
 //}
+LanguageModelGenerator *lmGenerator;
+
+-(void)SetupLanguageDictionary{
+    lmGenerator = [[LanguageModelGenerator alloc] init];
+    // words = NSArray from sounds
+    for (Item *item in itemCollection)
+    {
+        NSString *name = @"LanguageModelFile";  // same as item name + postfix
+        NSError *err = [lmGenerator generateLanguageModelFromArray:item.possibleSounds withFilesNamed:name];
+        NSDictionary *languageGeneratorResults = nil;
+        NSString *lmPath = nil;
+        NSString *dicPath = nil;
+        
+        if([err code] == noErr) {
+            languageGeneratorResults = [err userInfo];
+            lmPath = [languageGeneratorResults objectForKey:@"LMPath"];
+            dicPath = [languageGeneratorResults objectForKey:@"DictionaryPath"];
+        } else {
+            NSLog(@"Error: %@",[err localizedDescription]);
+        }
+        
+        // now pass lmPath and dicPath to item's lmPath and dictPath
+
+    }
+    
+    
+}
 @end

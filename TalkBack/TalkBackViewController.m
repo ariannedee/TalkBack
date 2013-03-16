@@ -7,7 +7,6 @@
 //
 
 #import "TalkBackViewController.h"
-#import <OpenEars/LanguageModelGenerator.h>
 #import "Item.h"
 
 @implementation TalkBackViewController
@@ -22,8 +21,6 @@
 @synthesize fliteController;
 @synthesize slt;
 
-
-LanguageModelGenerator *lmGenerator;
 NSArray *itemModelArray;
 
 - (void)dealloc
@@ -45,7 +42,7 @@ NSArray *itemModelArray;
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
 		// OpenEar Language model generator
-        lmGenerator = [[LanguageModelGenerator alloc] init];
+        //lmGenerator = [[LanguageModelGenerator alloc] init];
 		itemModelArray = [[NSArray alloc] init];
 		[self.openEarsEventsObserver setDelegate:self];
     }
@@ -60,7 +57,6 @@ NSArray *itemModelArray;
     [super viewDidLoad];
 }
 
--
 
 
 // removes item model from the view
@@ -94,7 +90,7 @@ NSArray *itemModelArray;
 	 NSArray *words1 = [NSArray arrayWithObjects:@"BALLS",@"B",@"ALL",@"BA",@"BU",@"BO", nil];
 	 */
 	
-	 NSArray *paths = createDictionary(words1);
+	 //NSArray *paths = createDictionary(words1);
 	
 }
 
@@ -105,8 +101,9 @@ NSArray *itemModelArray;
 }
 
 
-- (NSArray)createDictionary: (NSArray*)words
+- (void)createDictionary: (NSArray*)words
 {
+    // words = NSArray from sounds
 	NSString *name = @"LanguageModelFile";  // same as item name + postfix
 	NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name];
 	
@@ -121,7 +118,7 @@ NSArray *itemModelArray;
 	} else {
 		NSLog(@"Error: %@",[err localizedDescription]);
 	}
-	return [NSArray arrayWithObjects:lmPath,dicPath, nil];
+	//return [NSArray arrayWithObjects:lmPath,dicPath, nil];
 }
 
 
