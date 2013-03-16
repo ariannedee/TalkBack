@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55910BF216F4397800175880 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55910BF116F4397800175880 /* UIKit.framework */; };
+		55910BF416F4397800175880 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55910BF316F4397800175880 /* Foundation.framework */; };
+		55910BF616F4397800175880 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55910BF516F4397800175880 /* CoreGraphics.framework */; };
+		55910BFC16F4397800175880 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55910BFA16F4397800175880 /* InfoPlist.strings */; };
+		55910BFF16F4397800175880 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55910BFE16F4397800175880 /* main.m */; };
+		55910C0216F4397800175880 /* TalkBackAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55910C0116F4397800175880 /* TalkBackAppDelegate.m */; };
+		55910C0516F4397900175880 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55910C0316F4397900175880 /* MainWindow.xib */; };
+		55910C0816F4397900175880 /* TalkBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55910C0716F4397900175880 /* TalkBackViewController.m */; };
+		55910C0B16F4397900175880 /* TalkBackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55910C0916F4397900175880 /* TalkBackViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55910BED16F4397800175880 /* TalkBack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkBack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55910BF116F4397800175880 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		55910BF316F4397800175880 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		55910BF516F4397800175880 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		55910BF916F4397800175880 /* TalkBack-Info.plist */ = {isa = PBXFileReference; path = "TalkBack-Info.plist"; sourceTree = "<group>"; };
+		55910BFB16F4397800175880 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		55910BFD16F4397800175880 /* TalkBack-Prefix.pch */ = {isa = PBXFileReference; path = "TalkBack-Prefix.pch"; sourceTree = "<group>"; };
+		55910BFE16F4397800175880 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55910C0016F4397800175880 /* TalkBackAppDelegate.h */ = {isa = PBXFileReference; path = TalkBackAppDelegate.h; sourceTree = "<group>"; };
+		55910C0116F4397800175880 /* TalkBackAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalkBackAppDelegate.m; sourceTree = "<group>"; };
+		55910C0416F4397900175880 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		55910C0616F4397900175880 /* TalkBackViewController.h */ = {isa = PBXFileReference; path = TalkBackViewController.h; sourceTree = "<group>"; };
+		55910C0716F4397900175880 /* TalkBackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalkBackViewController.m; sourceTree = "<group>"; };
+		55910C0A16F4397900175880 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TalkBackViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55910BEA16F4397700175880 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55910BF216F4397800175880 /* UIKit.framework in Frameworks */,
+				55910BF416F4397800175880 /* Foundation.framework in Frameworks */,
+				55910BF616F4397800175880 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55910BE216F4397600175880 = {
+			isa = PBXGroup;
+			children = (
+				55910BF716F4397800175880 /* TalkBack */,
+				55910BF016F4397800175880 /* Frameworks */,
+				55910BEE16F4397800175880 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55910BEE16F4397800175880 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55910BED16F4397800175880 /* TalkBack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55910BF016F4397800175880 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55910BF116F4397800175880 /* UIKit.framework */,
+				55910BF316F4397800175880 /* Foundation.framework */,
+				55910BF516F4397800175880 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55910BF716F4397800175880 /* TalkBack */ = {
+			isa = PBXGroup;
+			children = (
+				55910C0016F4397800175880 /* TalkBackAppDelegate.h */,
+				55910C0116F4397800175880 /* TalkBackAppDelegate.m */,
+				55910C0316F4397900175880 /* MainWindow.xib */,
+				55910C0616F4397900175880 /* TalkBackViewController.h */,
+				55910C0716F4397900175880 /* TalkBackViewController.m */,
+				55910C0916F4397900175880 /* TalkBackViewController.xib */,
+				55910BF816F4397800175880 /* Supporting Files */,
+			);
+			path = TalkBack;
+			sourceTree = "<group>";
+		};
+		55910BF816F4397800175880 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55910BF916F4397800175880 /* TalkBack-Info.plist */,
+				55910BFA16F4397800175880 /* InfoPlist.strings */,
+				55910BFD16F4397800175880 /* TalkBack-Prefix.pch */,
+				55910BFE16F4397800175880 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55910BEC16F4397700175880 /* TalkBack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55910C0E16F4397900175880 /* Build configuration list for PBXNativeTarget "TalkBack" */;
+			buildPhases = (
+				55910BE916F4397700175880 /* Sources */,
+				55910BEA16F4397700175880 /* Frameworks */,
+				55910BEB16F4397700175880 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalkBack;
+			productName = TalkBack;
+			productReference = 55910BED16F4397800175880 /* TalkBack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55910BE416F4397600175880 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 55910BE716F4397600175880 /* Build configuration list for PBXProject "TalkBack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 55910BE216F4397600175880;
+			productRefGroup = 55910BEE16F4397800175880 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55910BEC16F4397700175880 /* TalkBack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55910BEB16F4397700175880 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55910BFC16F4397800175880 /* InfoPlist.strings in Resources */,
+				55910C0516F4397900175880 /* MainWindow.xib in Resources */,
+				55910C0B16F4397900175880 /* TalkBackViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55910BE916F4397700175880 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55910BFF16F4397800175880 /* main.m in Sources */,
+				55910C0216F4397800175880 /* TalkBackAppDelegate.m in Sources */,
+				55910C0816F4397900175880 /* TalkBackViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		55910BFA16F4397800175880 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55910BFB16F4397800175880 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		55910C0316F4397900175880 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55910C0416F4397900175880 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		55910C0916F4397900175880 /* TalkBackViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55910C0A16F4397900175880 /* en */,
+			);
+			name = TalkBackViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55910C0C16F4397900175880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		55910C0D16F4397900175880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		55910C0F16F4397900175880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TalkBack/TalkBack-Prefix.pch";
+				INFOPLIST_FILE = "TalkBack/TalkBack-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		55910C1016F4397900175880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TalkBack/TalkBack-Prefix.pch";
+				INFOPLIST_FILE = "TalkBack/TalkBack-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55910BE716F4397600175880 /* Build configuration list for PBXProject "TalkBack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55910C0C16F4397900175880 /* Debug */,
+				55910C0D16F4397900175880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55910C0E16F4397900175880 /* Build configuration list for PBXNativeTarget "TalkBack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55910C0F16F4397900175880 /* Debug */,
+				55910C1016F4397900175880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55910BE416F4397600175880 /* Project object */;
+}
