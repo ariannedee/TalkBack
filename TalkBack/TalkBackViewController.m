@@ -11,7 +11,6 @@
 
 @implementation TalkBackViewController
 
-
 @synthesize button;
 @synthesize buttonNext;
 @synthesize buttonPrev;
@@ -57,71 +56,6 @@ NSArray *itemModelArray;
     [super viewDidLoad];
 }
 
-
-
-// removes item model from the view
-- (void)unloadCurrentItemModel:
-{
-	[self.pocketsphinxController stopListening];
-}
-
-// populate the view with images/word for the model with given index
-// and swap the dictionary for sphinx controller
-- (void)loadViewWithItem: (NSInteger)modelIdx
-{
-
-	NSString* lmPath = @""; // path from model
-	NSString* dictPath = @""; // path from model
-	[self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:lmPath languageModelIsJSGF:NO];
-}
-
-// removing item models from the array, and clean up generated lmpath and dicpath files
-- (void)unloadItemModels
-{
-	
-}
-
-// Loads item models of specific category
-// fetch associated images/animation
-// and create the dictionary (lmpath and dicpath) * remember to clean up the files generated
-- (void)loadItemModels:
-{
-	/* sample data sounds from text?
-	 NSArray *words1 = [NSArray arrayWithObjects:@"BALLS",@"B",@"ALL",@"BA",@"BU",@"BO", nil];
-	 */
-	
-	 //NSArray *paths = createDictionary(words1);
-	
-}
-
-
-// moving to next itemmodel
-- (IBAction)onButtonNextPushed:(id)sender {
-	[image setImage:[UIImage imageNamed:@"swirl.jpg"]];
-}
-
-
-- (void)createDictionary: (NSArray*)words
-{
-    // words = NSArray from sounds
-	NSString *name = @"LanguageModelFile";  // same as item name + postfix
-	NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name];
-	
-	NSDictionary *languageGeneratorResults = nil;
-	NSString *lmPath = nil;
-	NSString *dicPath = nil;
-	
-	if([err code] == noErr) {
-		languageGeneratorResults = [err userInfo];
-		lmPath = [languageGeneratorResults objectForKey:@"LMPath"];
-		dicPath = [languageGeneratorResults objectForKey:@"DictionaryPath"];
-	} else {
-		NSLog(@"Error: %@",[err localizedDescription]);
-	}
-	//return [NSArray arrayWithObjects:lmPath,dicPath, nil];
-}
-
-
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -135,6 +69,54 @@ NSArray *itemModelArray;
     return YES;
 }
 
+#pragma mark - Private functions
+
+// removes item model from the view
+- (void)unloadCurrentItemModel
+{
+	[self.pocketsphinxController stopListening];
+}
+
+// populate the view with images/word for the model with given index
+// and swap the dictionary for sphinx controller
+- (void)loadViewWithItem: (NSInteger)modelIdx
+{
+
+	NSString* lmPath = @""; // path from model
+	NSString* dictPath = @""; // path from model
+	[self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dictPath languageModelIsJSGF:NO];
+}
+
+// removing item models from the array, and clean up generated lmpath and dicpath files
+- (void)unloadItemModels
+{
+	
+}
+
+// Loads item models of specific category
+// fetch associated images/animation
+// and create the dictionary (lmpath and dicpath) * remember to clean up the files generated
+- (void)loadItemModels
+{
+	/* sample data sounds from text?
+	 NSArray *words1 = [NSArray arrayWithObjects:@"BALLS",@"B",@"ALL",@"BA",@"BU",@"BO", nil];
+	 */
+	
+	 //NSArray *paths = createDictionary(words1);
+	
+}
+
+#pragma mark - IBActions
+
+// moving to next itemmodel
+- (IBAction)onButtonNextPushed:(id)sender {
+	[image setImage:[UIImage imageNamed:@"swirl.jpg"]];
+}
+
+- (IBAction)onButtonPrevPushed:(id)sender {
+	[image setImage:[UIImage imageNamed:@"swirl.jpg"]];
+}
+
 - (IBAction)onButtonPushed:(id)sender {
     
     if ([button isSelected]) {
@@ -146,11 +128,9 @@ NSArray *itemModelArray;
         [button setSelected:YES];
         [image setHighlighted:YES];
     }
-	
-	
 }
 
-/* methods for OpenEar api */
+#pragma mark - OpenEar methods
 - (OpenEarsEventsObserver *)openEarsEventsObserver {
 	if (openEarsEventsObserver == nil) {
 		openEarsEventsObserver = [[OpenEarsEventsObserver alloc] init];
