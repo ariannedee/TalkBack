@@ -197,168 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>8531A6D416F52C1500893996</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>TalkBackViewController.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>8531A6D516F52C1500893996</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>TalkBackViewController.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>8531A6D616F52C1500893996</string>
-						<key>history</key>
-						<array>
-							<string>8531A6A616F5162900893996</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1102, 781}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>454 56 1102 822 0 0 1440 878 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>8531A6D716F52C1500893996</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>Item.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>8531A6D816F52C1500893996</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>Item.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>8531A6D916F52C1500893996</string>
-						<key>history</key>
-						<array>
-							<string>8531A6B316F51E6400893996</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {660, 781}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>60 56 660 822 0 0 1440 878 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>8531A6DA16F52C1500893996</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>TalkBackViewController.h</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>8531A6DB16F52C1500893996</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>TalkBackViewController.h</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>8531A6DC16F52C1500893996</string>
-						<key>history</key>
-						<array>
-							<string>8531A6A516F5161100893996</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {660, 781}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>62 56 660 822 0 0 1440 878 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>8531A6DD16F52C1500893996</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>TalkBackAppDelegate.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>8531A6DE16F52C1500893996</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>TalkBackAppDelegate.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>8531A6DF16F52C1500893996</string>
-						<key>history</key>
-						<array>
-							<string>8531A6A416F515F300893996</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {823, 781}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>81 56 823 822 0 0 1440 878 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -487,7 +326,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8531A6D116F52C1500893996</string>
+										<string>8531A6E016F52F6900893996</string>
 										<key>history</key>
 										<array>
 											<string>851C298A16F4E8BA007ADBE8</string>
@@ -698,14 +537,14 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>8531A6D716F52C1500893996</string>
+		<string>8531A6D416F52C1500893996</string>
+		<string>8531A6DA16F52C1500893996</string>
+		<string>8531A6DD16F52C1500893996</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>8531A6DD16F52C1500893996</string>
-		<string>8531A6DA16F52C1500893996</string>
-		<string>8531A6D716F52C1500893996</string>
-		<string>/Users/fe/Documents/ios_dev/TalkBack/TalkBack.xcodeproj</string>
 		<string>8540795916F45F7600021164</string>
-		<string>8531A6D416F52C1500893996</string>
+		<string>/Users/fe/Documents/ios_dev/TalkBack/TalkBack.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>57 55 880 823 0 0 1440 878 </string>

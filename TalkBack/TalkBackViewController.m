@@ -8,6 +8,7 @@
 
 #import "TalkBackViewController.h"
 #import <OpenEars/LanguageModelGenerator.h>
+#import "Item.h"
 
 @implementation TalkBackViewController
 
@@ -186,7 +187,8 @@ NSArray *itemModelArray;
 	NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
 	if(recognitionScore.intValue > -600 && recognitionScore.intValue < -10 && [hypothesis isEqualToString:@"BALLS"]){
 		[image setHighlighted:YES];
-	}else {
+	}
+    else {
 		[self.fliteController say:@"BALLS" withVoice:self.slt];
 		[image setHighlighted:NO];
 
