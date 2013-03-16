@@ -20,6 +20,7 @@
             sounds:(NSArray*)possibleSounds_
          animation:(NSString*)animationUrl_
 {
+    
     if(self = [super init]) {
         [self setDisplayName:displayName_];
         [self setPossibleSounds:possibleSounds_];

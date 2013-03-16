@@ -8,6 +8,7 @@
 
 #import "TalkBackViewController.h"
 #import <OpenEars/LanguageModelGenerator.h>
+#import "Item.h"
 
 @implementation TalkBackViewController
 
@@ -43,12 +44,12 @@ LanguageModelGenerator *lmGenerator;
 {
 	// OpenEar Language model generator
 	lmGenerator = [[LanguageModelGenerator alloc] init];
-	NSArray *words1 = [NSArray arrayWithObjects:@"BALLS",@"B",@"ALL",@"BA",@"BU",@"BO", nil];
-	NSArray *words2 = [NSArray arrayWithObjects:@"POPCORN", nil];
-	NSArray *words3 = [NSArray arrayWithObjects:@"DOG", nil];
-	NSArray *words4 = [NSArray arrayWithObjects:@"JUICE", nil];
-	NSArray *words5 = [NSArray arrayWithObjects:@"COMPUTER", nil];
-	
+	NSArray *words1 = [NSArray arrayWithObjects:@"DA", @"DOD", @"DOG", nil];
+    NSArray *words2 = [NSArray arrayWithObjects:@"BA", @"BAW", @"BALL", nil];
+	NSArray *words3 = [NSArray arrayWithObjects:@"DO", @"DUDE", @"DUCE", @"JUICE", nil];
+    NSArray *words4 = [NSArray arrayWithObjects:@"PAH", @"PAHTO", @"PAHCO", @"POPCO", @"POPCONE", @"POPCORN", nil];
+    NSArray *words5 = [NSArray arrayWithObjects:@"POOTUH", @"CAHPOOTUH", @"CAHMPYOUTUH", @"COMPUTER", nil];
+    
 	NSString *name = @"LanguageModelFile";
 	NSError *err = [lmGenerator generateLanguageModelFromArray:words1 withFilesNamed:name];
 	
@@ -134,7 +135,8 @@ LanguageModelGenerator *lmGenerator;
 	NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
 	if(recognitionScore.intValue > -600 && recognitionScore.intValue < -10 && [hypothesis isEqualToString:@"BALLS"]){
 		[image setHighlighted:YES];
-	}else {
+	}
+    else {
 		[self.fliteController say:@"BALLS" withVoice:self.slt];
 		[image setHighlighted:NO];
 

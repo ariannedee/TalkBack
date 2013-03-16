@@ -15,4 +15,7 @@
 @property(nonatomic, retain) NSString *animationUrl;
 @property(nonatomic, retain) NSMutableArray *animationImages;
 
+-(id) initWithName:(NSString*)displayName_
+            sounds:(NSArray*)possibleSounds_
+         animation:(NSString*)animationUrl_;
 @end
