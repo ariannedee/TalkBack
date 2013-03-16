@@ -10,6 +10,9 @@
 
 @implementation TalkBackViewController
 
+@synthesize button;
+@synthesize image;
+
 - (void)dealloc
 {
     [super dealloc];
@@ -46,4 +49,16 @@
     return YES;
 }
 
+- (IBAction)onButtonPushed:(id)sender {
+    
+    if ([button isSelected]) {
+        [button setSelected:NO];
+        [image setHighlighted:NO];
+    }
+    else
+    {
+        [button setSelected:YES];
+        [image setHighlighted:YES];
+    }
+}
 @end

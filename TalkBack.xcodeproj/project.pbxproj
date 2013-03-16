@@ -16,6 +16,8 @@
 		55910C0516F4397900175880 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55910C0316F4397900175880 /* MainWindow.xib */; };
 		55910C0816F4397900175880 /* TalkBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55910C0716F4397900175880 /* TalkBackViewController.m */; };
 		55910C0B16F4397900175880 /* TalkBackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55910C0916F4397900175880 /* TalkBackViewController.xib */; };
+		55910C1416F447A700175880 /* duck1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55910C1216F447A700175880 /* duck1.jpg */; };
+		55910C1516F447A700175880 /* duck2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55910C1316F447A700175880 /* duck2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +25,18 @@
 		55910BF116F4397800175880 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55910BF316F4397800175880 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		55910BF516F4397800175880 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		55910BF916F4397800175880 /* TalkBack-Info.plist */ = {isa = PBXFileReference; path = "TalkBack-Info.plist"; sourceTree = "<group>"; };
+		55910BF916F4397800175880 /* TalkBack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TalkBack-Info.plist"; sourceTree = "<group>"; };
 		55910BFB16F4397800175880 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		55910BFD16F4397800175880 /* TalkBack-Prefix.pch */ = {isa = PBXFileReference; path = "TalkBack-Prefix.pch"; sourceTree = "<group>"; };
+		55910BFD16F4397800175880 /* TalkBack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TalkBack-Prefix.pch"; sourceTree = "<group>"; };
 		55910BFE16F4397800175880 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		55910C0016F4397800175880 /* TalkBackAppDelegate.h */ = {isa = PBXFileReference; path = TalkBackAppDelegate.h; sourceTree = "<group>"; };
+		55910C0016F4397800175880 /* TalkBackAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TalkBackAppDelegate.h; sourceTree = "<group>"; };
 		55910C0116F4397800175880 /* TalkBackAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalkBackAppDelegate.m; sourceTree = "<group>"; };
 		55910C0416F4397900175880 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		55910C0616F4397900175880 /* TalkBackViewController.h */ = {isa = PBXFileReference; path = TalkBackViewController.h; sourceTree = "<group>"; };
+		55910C0616F4397900175880 /* TalkBackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TalkBackViewController.h; sourceTree = "<group>"; };
 		55910C0716F4397900175880 /* TalkBackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalkBackViewController.m; sourceTree = "<group>"; };
 		55910C0A16F4397900175880 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TalkBackViewController.xib; sourceTree = "<group>"; };
+		55910C1216F447A700175880 /* duck1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = duck1.jpg; path = media/duck1.jpg; sourceTree = "<group>"; };
+		55910C1316F447A700175880 /* duck2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = duck2.jpg; path = media/duck2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		55910BE216F4397600175880 = {
 			isa = PBXGroup;
 			children = (
+				55910C1116F4479000175880 /* Media */,
 				55910BF716F4397800175880 /* TalkBack */,
 				55910BF016F4397800175880 /* Frameworks */,
 				55910BEE16F4397800175880 /* Products */,
@@ -99,6 +104,15 @@
 				55910BFE16F4397800175880 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55910C1116F4479000175880 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				55910C1216F447A700175880 /* duck1.jpg */,
+				55910C1316F447A700175880 /* duck2.jpg */,
+			);
+			name = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +165,8 @@
 				55910BFC16F4397800175880 /* InfoPlist.strings in Resources */,
 				55910C0516F4397900175880 /* MainWindow.xib in Resources */,
 				55910C0B16F4397900175880 /* TalkBackViewController.xib in Resources */,
+				55910C1416F447A700175880 /* duck1.jpg in Resources */,
+				55910C1516F447A700175880 /* duck2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -72,4 +72,6 @@
     [super dealloc];
 }
 
+- (IBAction)onButtonPressed:(id)sender {
+}
 @end

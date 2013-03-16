@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TalkBackViewController : UIViewController {
-    
-}
+@interface TalkBackViewController : UIViewController
+
+@property (nonatomic, retain) IBOutlet UIButton *button;
+@property (nonatomic, retain) IBOutlet UIImageView *image;
+
+- (IBAction)onButtonPushed:(id)sender;
 
 @end
