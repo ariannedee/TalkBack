@@ -19,6 +19,7 @@
 		55910C1416F447A700175880 /* duck1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55910C1216F447A700175880 /* duck1.jpg */; };
 		55910C1516F447A700175880 /* duck2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55910C1316F447A700175880 /* duck2.jpg */; };
 		8531A69C16F5136000893996 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 8531A69B16F5136000893996 /* Item.m */; };
+		8531A6A816F51A7800893996 /* swirl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8531A6A716F51A7800893996 /* swirl.jpg */; };
 		8540786E16F44E1C00021164 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8540786D16F44E1C00021164 /* AVFoundation.framework */; };
 		8540787416F44E2800021164 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8540787316F44E2800021164 /* AudioToolbox.framework */; };
 		8540788816F44E3F00021164 /* cmu07a.dic in Resources */ = {isa = PBXBuildFile; fileRef = 8540787816F44E3E00021164 /* cmu07a.dic */; };
@@ -57,6 +58,7 @@
 		55910C1316F447A700175880 /* duck2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = duck2.jpg; path = media/duck2.jpg; sourceTree = "<group>"; };
 		8531A69A16F5136000893996 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		8531A69B16F5136000893996 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		8531A6A716F51A7800893996 /* swirl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swirl.jpg; sourceTree = "<group>"; };
 		8540786D16F44E1C00021164 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8540787316F44E2800021164 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8540787816F44E3E00021164 /* cmu07a.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmu07a.dic; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		55910C1116F4479000175880 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				8531A6A716F51A7800893996 /* swirl.jpg */,
 				55910C1216F447A700175880 /* duck1.jpg */,
 				55910C1316F447A700175880 /* duck2.jpg */,
 			);
@@ -264,6 +267,7 @@
 				8540789316F44E3F00021164 /* OpenEars1.languagemodel in Resources */,
 				8540789416F44E3F00021164 /* OpenEars2.gram in Resources */,
 				8540789516F44E3F00021164 /* OpenEarsCorpus.txt in Resources */,
+				8531A6A816F51A7800893996 /* swirl.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

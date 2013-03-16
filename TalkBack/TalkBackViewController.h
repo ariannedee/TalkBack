@@ -20,6 +20,8 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIButton *button;
+@property (nonatomic, retain) IBOutlet UIButton *buttonNext;
+@property (nonatomic, retain) IBOutlet UIButton *buttonPrev;
 @property (nonatomic, retain) IBOutlet UIImageView *image;
 @property(nonatomic, retain) PocketsphinxController *pocketsphinxController;
 @property(nonatomic, retain) OpenEarsEventsObserver *openEarsEventsObserver;
@@ -27,5 +29,7 @@
 @property (nonatomic, retain) Slt *slt;
 
 - (IBAction)onButtonPushed:(id)sender;
+- (IBAction)onButtonNextPushed:(id)sender;
+- (IBAction)onButtonPrevPushed:(id)sender;
 
 @end

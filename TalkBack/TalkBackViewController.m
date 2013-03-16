@@ -13,6 +13,8 @@
 
 
 @synthesize button;
+@synthesize buttonNext;
+@synthesize buttonPrev;
 @synthesize image;
 @synthesize openEarsEventsObserver;
 @synthesize pocketsphinxController;
@@ -21,6 +23,7 @@
 
 
 LanguageModelGenerator *lmGenerator;
+NSArray *itemModelArray;
 
 - (void)dealloc
 {
@@ -37,20 +40,74 @@ LanguageModelGenerator *lmGenerator;
 
 #pragma mark - View lifecycle
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+		// OpenEar Language model generator
+        lmGenerator = [[LanguageModelGenerator alloc] init];
+		itemModelArray = [[NSArray alloc] init];
+		[self.openEarsEventsObserver setDelegate:self];
+    }
+    return self;
+}
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-	// OpenEar Language model generator
-	lmGenerator = [[LanguageModelGenerator alloc] init];
-	NSArray *words1 = [NSArray arrayWithObjects:@"BALLS",@"B",@"ALL",@"BA",@"BU",@"BO", nil];
-	NSArray *words2 = [NSArray arrayWithObjects:@"POPCORN", nil];
-	NSArray *words3 = [NSArray arrayWithObjects:@"DOG", nil];
-	NSArray *words4 = [NSArray arrayWithObjects:@"JUICE", nil];
-	NSArray *words5 = [NSArray arrayWithObjects:@"COMPUTER", nil];
+	// display categories
 	
-	NSString *name = @"LanguageModelFile";
-	NSError *err = [lmGenerator generateLanguageModelFromArray:words1 withFilesNamed:name];
+    [super viewDidLoad];
+}
+
+-
+
+
+// removes item model from the view
+- (void)unloadCurrentItemModel:
+{
+	[self.pocketsphinxController stopListening];
+}
+
+// populate the view with images/word for the model with given index
+// and swap the dictionary for sphinx controller
+- (void)loadViewWithItem: (NSInteger)modelIdx
+{
+	
+	NSString* lmPath = @""; // path from model
+	NSString* dictPath = @""; // path from model
+	[self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:lmPath languageModelIsJSGF:NO];
+}
+
+// removing item models from the array, and clean up generated lmpath and dicpath files
+- (void)unloadItemModels
+{
+	
+}
+
+// Loads item models of specific category
+// fetch associated images/animation
+// and create the dictionary (lmpath and dicpath) * remember to clean up the files generated
+- (void)loadItemModels:
+{
+	/* sample data sounds from text?
+	 NSArray *words1 = [NSArray arrayWithObjects:@"BALLS",@"B",@"ALL",@"BA",@"BU",@"BO", nil];
+	 */
+	
+	 NSArray *paths = createDictionary(words1);
+	
+}
+
+
+// moving to next itemmodel
+- (IBAction)onButtonNextPushed:(id)sender {
+	[image setImage:[UIImage imageNamed:@"swirl.jpg"]];
+}
+
+
+- (NSArray)createDictionary: (NSArray*)words
+{
+	NSString *name = @"LanguageModelFile";  // same as item name + postfix
+	NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name];
 	
 	NSDictionary *languageGeneratorResults = nil;
 	NSString *lmPath = nil;
@@ -63,14 +120,7 @@ LanguageModelGenerator *lmGenerator;
 	} else {
 		NSLog(@"Error: %@",[err localizedDescription]);
 	}
-	
-	// OpenEar observer and controller begins
-	// we may want to generate a dictionary for each words, and change the dictionary used for each view, 
-	// so we only trying to recognize one single word at a time
-	[self.openEarsEventsObserver setDelegate:self];
-	[self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath languageModelIsJSGF:NO];
-	
-    [super viewDidLoad];
+	return [NSArray arrayWithObjects:lmPath,dicPath, nil];
 }
 
 
@@ -98,6 +148,8 @@ LanguageModelGenerator *lmGenerator;
         [button setSelected:YES];
         [image setHighlighted:YES];
     }
+	
+	
 }
 
 /* methods for OpenEar api */
@@ -139,7 +191,6 @@ LanguageModelGenerator *lmGenerator;
 		[image setHighlighted:NO];
 
 	}
-
 }
 
 - (void) pocketsphinxDidStartCalibration {
