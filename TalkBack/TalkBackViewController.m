@@ -43,7 +43,7 @@ LanguageModelGenerator *lmGenerator;
 {
 	// OpenEar Language model generator
 	lmGenerator = [[LanguageModelGenerator alloc] init];
-	NSArray *words1 = [NSArray arrayWithObjects:@"BALLS",@"B",@"ALL",@"BA",@"BU",@"BO", nil];
+	NSArray *words1 = [NSArray arrayWithObjects:@"BALLS", nil];
 	NSArray *words2 = [NSArray arrayWithObjects:@"POPCORN", nil];
 	NSArray *words3 = [NSArray arrayWithObjects:@"DOG", nil];
 	NSArray *words4 = [NSArray arrayWithObjects:@"JUICE", nil];

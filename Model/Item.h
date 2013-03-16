@@ -12,7 +12,9 @@
 
 @property(nonatomic, retain) NSString *displayName; 
 @property(nonatomic, retain) NSArray *possibleSounds;
-@property(nonatomic, retain) NSString *animationUrl;
+@property(nonatomic, retain) NSString *animName;
 @property(nonatomic, retain) NSMutableArray *animationImages;
+@property(nonatomic, retain) NSString *imPath;
+@property(nonatomic, retain) NSString *dictPath;
 
 @end

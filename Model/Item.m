@@ -13,20 +13,23 @@
 
 @synthesize displayName;
 @synthesize possibleSounds;
-@synthesize animationUrl;
+@synthesize animName;
 @synthesize animationImages;
+@synthesize imPath;
+@synthesize dictPath;
 
 -(id) initWithName:(NSString*)displayName_
             sounds:(NSArray*)possibleSounds_
-         animation:(NSString*)animationUrl_
+         animation:(NSString*)animName_
 {
     if(self = [super init]) {
         [self setDisplayName:displayName_];
         [self setPossibleSounds:possibleSounds_];
-        [self setAnimationUrl:animationUrl_];
+        [self setAnimName:animName_];
         
         self.animationImages = [[NSMutableArray alloc] init];
-        //[self createAnimation];
+        imPath = nil;
+        dictPath = nil;
         
     }
     return self;
@@ -40,10 +43,26 @@
 
 - (void)createAnimation
 {
-    for (int i = 1; i < 3; i++)
+    NSArray *filePaths = [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:@""];
+    
+    NSMutableArray *animImages = [[NSMutableArray alloc] init];
+    
+    if (filePaths)
     {
-        [animationImages addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%@%i", animationUrl, i]]];
+        for (NSString *imagePath in filePaths)
+        {
+            NSString *imageName = [imagePath lastPathComponent];
+            
+            NSRange isAnimImage = [imageName rangeOfString:self.animName];
+            
+            if (isAnimImage.location != NSNotFound)
+            {
+                [animImages addObject:[UIImage imageNamed:imageName]];
+            }
+        }
     }
+    self.animationImages = animImages;
+    [animImages release];
 }
 
 
