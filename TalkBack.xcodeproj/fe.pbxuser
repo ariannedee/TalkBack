@@ -1,0 +1,162 @@
+// !$*UTF8*$!
+{
+	55910BE416F4397600175880 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 8540786816F44E0A00021164 /* TalkBack */;
+		activeTarget = 55910BEC16F4397700175880 /* TalkBack */;
+		addToTargets = (
+			55910BEC16F4397700175880 /* TalkBack */,
+		);
+		codeSenseManager = 8540787216F44E1C00021164 /* Code sense */;
+		executables = (
+			8540786816F44E0A00021164 /* TalkBack */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					301,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 385109514;
+			PBXWorkspaceStateSaveDate = 385109514;
+		};
+		perUserProjectItems = {
+			8540795416F45F7600021164 /* PBXTextBookmark */ = 8540795416F45F7600021164 /* PBXTextBookmark */;
+			8540795516F45F7600021164 /* PBXTextBookmark */ = 8540795516F45F7600021164 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 8540787116F44E1C00021164 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	55910BEC16F4397700175880 /* TalkBack */ = {
+		activeExec = 0;
+		executables = (
+			8540786816F44E0A00021164 /* TalkBack */,
+		);
+	};
+	55910C0016F4397800175880 /* TalkBackAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1043, 750}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 420}";
+			sepNavWindowFrame = "{{62, 0}, {1102, 878}}";
+		};
+	};
+	55910C0616F4397900175880 /* TalkBackViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1043, 750}}";
+			sepNavSelRange = "{769, 0}";
+			sepNavVisRange = "{0, 769}";
+			sepNavWindowFrame = "{{62, 0}, {1102, 878}}";
+		};
+	};
+	55910C0716F4397900175880 /* TalkBackViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 3185}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 384}";
+			sepNavWindowFrame = "{{62, 0}, {1102, 878}}";
+		};
+	};
+	8540786816F44E0A00021164 /* TalkBack */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = TalkBack;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	8540787116F44E1C00021164 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	8540787216F44E1C00021164 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8540795416F45F7600021164 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
+		name = "TalkBackViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 308;
+		vrLoc = 0;
+	};
+	8540795516F45F7600021164 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
+		name = "TalkBackViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 384;
+		vrLoc = 0;
+	};
+}

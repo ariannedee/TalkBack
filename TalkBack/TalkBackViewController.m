@@ -7,11 +7,18 @@
 //
 
 #import "TalkBackViewController.h"
+#import <OpenEars/LanguageModelGenerator.h>
 
 @implementation TalkBackViewController
 
+
 @synthesize button;
 @synthesize image;
+@synthesize openEarsEventsObserver;
+@synthesize pocketsphinxController;
+
+
+LanguageModelGenerator *lmGenerator;
 
 - (void)dealloc
 {
@@ -28,13 +35,37 @@
 
 #pragma mark - View lifecycle
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+	// OpenEar Language model generator
+	lmGenerator = [[LanguageModelGenerator alloc] init];
+	NSArray *words = [NSArray arrayWithObjects:@"WORD", @"STATEMENT", @"OTHER WORD", @"A PHRASE", nil];
+	NSString *name = @"LanguageModelFile";
+	NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name];
+	
+	NSDictionary *languageGeneratorResults = nil;
+	NSString *lmPath = nil;
+	NSString *dicPath = nil;
+	
+	if([err code] == noErr) {
+		languageGeneratorResults = [err userInfo];
+		lmPath = [languageGeneratorResults objectForKey:@"LMPath"];
+		dicPath = [languageGeneratorResults objectForKey:@"DictionaryPath"];
+	} else {
+		NSLog(@"Error: %@",[err localizedDescription]);
+	}
+	
+	// OpenEar observer and controller begins
+	// we may want to generate a dictionary for each words, and change the dictionary used for each view, 
+	// so we only trying to recognize one single word at a time
+	[self.openEarsEventsObserver setDelegate:self];
+	[self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath languageModelIsJSGF:NO];
+	
     [super viewDidLoad];
 }
-*/
+
 
 - (void)viewDidUnload
 {
@@ -61,4 +92,65 @@
         [image setHighlighted:YES];
     }
 }
+
+/* methods for OpenEar api */
+- (OpenEarsEventsObserver *)openEarsEventsObserver {
+	if (openEarsEventsObserver == nil) {
+		openEarsEventsObserver = [[OpenEarsEventsObserver alloc] init];
+	}
+	return openEarsEventsObserver;
+}
+
+- (PocketsphinxController *)pocketsphinxController {
+	if (pocketsphinxController == nil) {
+		pocketsphinxController = [[PocketsphinxController alloc] init];
+	}
+	return pocketsphinxController;
+}
+
+// ** this is the method that we will work with the most. ** //
+- (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID {
+	NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
+}
+
+- (void) pocketsphinxDidStartCalibration {
+	NSLog(@"Pocketsphinx calibration has started.");
+}
+
+- (void) pocketsphinxDidCompleteCalibration {
+	NSLog(@"Pocketsphinx calibration is complete.");
+}
+
+- (void) pocketsphinxDidStartListening {
+	NSLog(@"Pocketsphinx is now listening.");
+}
+
+- (void) pocketsphinxDidDetectSpeech {
+	NSLog(@"Pocketsphinx has detected speech.");
+}
+
+- (void) pocketsphinxDidDetectFinishedSpeech {
+	NSLog(@"Pocketsphinx has detected a period of silence, concluding an utterance.");
+}
+
+- (void) pocketsphinxDidStopListening {
+	NSLog(@"Pocketsphinx has stopped listening.");
+}
+
+- (void) pocketsphinxDidSuspendRecognition {
+	NSLog(@"Pocketsphinx has suspended recognition.");
+}
+
+- (void) pocketsphinxDidResumeRecognition {
+	NSLog(@"Pocketsphinx has resumed recognition."); 
+}
+
+- (void) pocketsphinxDidChangeLanguageModelToFile:(NSString *)newLanguageModelPathAsString andDictionary:(NSString *)newDictionaryPathAsString {
+	NSLog(@"Pocketsphinx is now using the following language model: \n%@ and the following dictionary: %@",newLanguageModelPathAsString,newDictionaryPathAsString);
+}
+
+- (void) pocketSphinxContinuousSetupDidFail { // This can let you know that something went wrong with the recognition loop startup. Turn on OPENEARSLOGGING to learn why.
+	NSLog(@"Setting up the continuous recognition loop has failed for some reason, please turn on OpenEarsLogging to learn more.");
+}
+
 @end

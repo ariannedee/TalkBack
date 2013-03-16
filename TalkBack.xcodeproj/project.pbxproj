@@ -18,6 +18,23 @@
 		55910C0B16F4397900175880 /* TalkBackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55910C0916F4397900175880 /* TalkBackViewController.xib */; };
 		55910C1416F447A700175880 /* duck1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55910C1216F447A700175880 /* duck1.jpg */; };
 		55910C1516F447A700175880 /* duck2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55910C1316F447A700175880 /* duck2.jpg */; };
+		8540786E16F44E1C00021164 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8540786D16F44E1C00021164 /* AVFoundation.framework */; };
+		8540787416F44E2800021164 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8540787316F44E2800021164 /* AudioToolbox.framework */; };
+		8540788816F44E3F00021164 /* cmu07a.dic in Resources */ = {isa = PBXBuildFile; fileRef = 8540787816F44E3E00021164 /* cmu07a.dic */; };
+		8540788916F44E3F00021164 /* feat.params in Resources */ = {isa = PBXBuildFile; fileRef = 8540787A16F44E3E00021164 /* feat.params */; };
+		8540788A16F44E3F00021164 /* mdef in Resources */ = {isa = PBXBuildFile; fileRef = 8540787B16F44E3E00021164 /* mdef */; };
+		8540788B16F44E3F00021164 /* means in Resources */ = {isa = PBXBuildFile; fileRef = 8540787C16F44E3E00021164 /* means */; };
+		8540788C16F44E3F00021164 /* noisedict in Resources */ = {isa = PBXBuildFile; fileRef = 8540787D16F44E3E00021164 /* noisedict */; };
+		8540788D16F44E3F00021164 /* sendump in Resources */ = {isa = PBXBuildFile; fileRef = 8540787E16F44E3E00021164 /* sendump */; };
+		8540788E16F44E3F00021164 /* transition_matrices in Resources */ = {isa = PBXBuildFile; fileRef = 8540787F16F44E3E00021164 /* transition_matrices */; };
+		8540788F16F44E3F00021164 /* variances in Resources */ = {isa = PBXBuildFile; fileRef = 8540788016F44E3E00021164 /* variances */; };
+		8540789016F44E3F00021164 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8540788116F44E3F00021164 /* OpenEars.framework */; };
+		8540789116F44E3F00021164 /* OpenEars1.dic in Resources */ = {isa = PBXBuildFile; fileRef = 8540788216F44E3F00021164 /* OpenEars1.dic */; };
+		8540789216F44E3F00021164 /* OpenEars1.gram in Resources */ = {isa = PBXBuildFile; fileRef = 8540788316F44E3F00021164 /* OpenEars1.gram */; };
+		8540789316F44E3F00021164 /* OpenEars1.languagemodel in Resources */ = {isa = PBXBuildFile; fileRef = 8540788416F44E3F00021164 /* OpenEars1.languagemodel */; };
+		8540789416F44E3F00021164 /* OpenEars2.gram in Resources */ = {isa = PBXBuildFile; fileRef = 8540788516F44E3F00021164 /* OpenEars2.gram */; };
+		8540789516F44E3F00021164 /* OpenEarsCorpus.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8540788616F44E3F00021164 /* OpenEarsCorpus.txt */; };
+		8540789616F44E3F00021164 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8540788716F44E3F00021164 /* Slt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +54,23 @@
 		55910C0A16F4397900175880 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TalkBackViewController.xib; sourceTree = "<group>"; };
 		55910C1216F447A700175880 /* duck1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = duck1.jpg; path = media/duck1.jpg; sourceTree = "<group>"; };
 		55910C1316F447A700175880 /* duck2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = duck2.jpg; path = media/duck2.jpg; sourceTree = "<group>"; };
+		8540786D16F44E1C00021164 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8540787316F44E2800021164 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8540787816F44E3E00021164 /* cmu07a.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmu07a.dic; sourceTree = "<group>"; };
+		8540787A16F44E3E00021164 /* feat.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = feat.params; sourceTree = "<group>"; };
+		8540787B16F44E3E00021164 /* mdef */ = {isa = PBXFileReference; lastKnownFileType = file; path = mdef; sourceTree = "<group>"; };
+		8540787C16F44E3E00021164 /* means */ = {isa = PBXFileReference; lastKnownFileType = file; path = means; sourceTree = "<group>"; };
+		8540787D16F44E3E00021164 /* noisedict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = noisedict; sourceTree = "<group>"; };
+		8540787E16F44E3E00021164 /* sendump */ = {isa = PBXFileReference; lastKnownFileType = file; path = sendump; sourceTree = "<group>"; };
+		8540787F16F44E3E00021164 /* transition_matrices */ = {isa = PBXFileReference; lastKnownFileType = file; path = transition_matrices; sourceTree = "<group>"; };
+		8540788016F44E3E00021164 /* variances */ = {isa = PBXFileReference; lastKnownFileType = file; path = variances; sourceTree = "<group>"; };
+		8540788116F44E3F00021164 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		8540788216F44E3F00021164 /* OpenEars1.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars1.dic; sourceTree = "<group>"; };
+		8540788316F44E3F00021164 /* OpenEars1.gram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars1.gram; sourceTree = "<group>"; };
+		8540788416F44E3F00021164 /* OpenEars1.languagemodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars1.languagemodel; sourceTree = "<group>"; };
+		8540788516F44E3F00021164 /* OpenEars2.gram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars2.gram; sourceTree = "<group>"; };
+		8540788616F44E3F00021164 /* OpenEarsCorpus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEarsCorpus.txt; sourceTree = "<group>"; };
+		8540788716F44E3F00021164 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +81,10 @@
 				55910BF216F4397800175880 /* UIKit.framework in Frameworks */,
 				55910BF416F4397800175880 /* Foundation.framework in Frameworks */,
 				55910BF616F4397800175880 /* CoreGraphics.framework in Frameworks */,
+				8540786E16F44E1C00021164 /* AVFoundation.framework in Frameworks */,
+				8540787416F44E2800021164 /* AudioToolbox.framework in Frameworks */,
+				8540789016F44E3F00021164 /* OpenEars.framework in Frameworks */,
+				8540789616F44E3F00021164 /* Slt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,10 +94,13 @@
 		55910BE216F4397600175880 = {
 			isa = PBXGroup;
 			children = (
+				8540787716F44E3E00021164 /* Framework */,
 				55910C1116F4479000175880 /* Media */,
 				55910BF716F4397800175880 /* TalkBack */,
 				55910BF016F4397800175880 /* Frameworks */,
 				55910BEE16F4397800175880 /* Products */,
+				8540786D16F44E1C00021164 /* AVFoundation.framework */,
+				8540787316F44E2800021164 /* AudioToolbox.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +156,36 @@
 			name = Media;
 			sourceTree = "<group>";
 		};
+		8540787716F44E3E00021164 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				8540787816F44E3E00021164 /* cmu07a.dic */,
+				8540787916F44E3E00021164 /* hub4wsj_sc_8k */,
+				8540788116F44E3F00021164 /* OpenEars.framework */,
+				8540788216F44E3F00021164 /* OpenEars1.dic */,
+				8540788316F44E3F00021164 /* OpenEars1.gram */,
+				8540788416F44E3F00021164 /* OpenEars1.languagemodel */,
+				8540788516F44E3F00021164 /* OpenEars2.gram */,
+				8540788616F44E3F00021164 /* OpenEarsCorpus.txt */,
+				8540788716F44E3F00021164 /* Slt.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		8540787916F44E3E00021164 /* hub4wsj_sc_8k */ = {
+			isa = PBXGroup;
+			children = (
+				8540787A16F44E3E00021164 /* feat.params */,
+				8540787B16F44E3E00021164 /* mdef */,
+				8540787C16F44E3E00021164 /* means */,
+				8540787D16F44E3E00021164 /* noisedict */,
+				8540787E16F44E3E00021164 /* sendump */,
+				8540787F16F44E3E00021164 /* transition_matrices */,
+				8540788016F44E3E00021164 /* variances */,
+			);
+			path = hub4wsj_sc_8k;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,6 +238,19 @@
 				55910C0B16F4397900175880 /* TalkBackViewController.xib in Resources */,
 				55910C1416F447A700175880 /* duck1.jpg in Resources */,
 				55910C1516F447A700175880 /* duck2.jpg in Resources */,
+				8540788816F44E3F00021164 /* cmu07a.dic in Resources */,
+				8540788916F44E3F00021164 /* feat.params in Resources */,
+				8540788A16F44E3F00021164 /* mdef in Resources */,
+				8540788B16F44E3F00021164 /* means in Resources */,
+				8540788C16F44E3F00021164 /* noisedict in Resources */,
+				8540788D16F44E3F00021164 /* sendump in Resources */,
+				8540788E16F44E3F00021164 /* transition_matrices in Resources */,
+				8540788F16F44E3F00021164 /* variances in Resources */,
+				8540789116F44E3F00021164 /* OpenEars1.dic in Resources */,
+				8540789216F44E3F00021164 /* OpenEars1.gram in Resources */,
+				8540789316F44E3F00021164 /* OpenEars1.languagemodel in Resources */,
+				8540789416F44E3F00021164 /* OpenEars2.gram in Resources */,
+				8540789516F44E3F00021164 /* OpenEarsCorpus.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +336,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Framework\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TalkBack/TalkBack-Prefix.pch";
@@ -266,6 +354,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Framework\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TalkBack/TalkBack-Prefix.pch";
 				INFOPLIST_FILE = "TalkBack/TalkBack-Info.plist";
@@ -294,6 +386,7 @@
 				55910C1016F4397900175880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
