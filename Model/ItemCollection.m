@@ -12,23 +12,60 @@
 
 @implementation ItemCollection
 
-@synthesize itemCollection; 
+@synthesize itemArray;
+@synthesize lmGenerator;
 
-//-(id)InitWithCategory: (NSstring *)collectionName
-//{
-//   NSFileManager * fileManager = [[NSFileManager alloc] init];
-//    NSString *filePath = [[path objectAtIndex:0] ]
-//   if([fileManager fileExistAtPath(@"ALL")])
-//   {
-//       
-//   }
-//}
-LanguageModelGenerator *lmGenerator;
+-(id)initWithCategory:(NSString *)collectionName
+{
+    self = [super init];
+    if(self) {
+        self.itemArray = [[NSMutableArray alloc] init];
 
--(void)SetupLanguageDictionary{
+        NSArray *filePaths = [[NSBundle mainBundle] pathsForResourcesOfType:@"data" inDirectory:@""];
+        NSMutableArray *dataFiles = [[NSMutableArray alloc] init];
+        NSInputStream *stream;
+        NSString *fileRoot;
+        if (filePaths)
+        {
+            for (NSString *dataPath in filePaths)
+            {
+                NSString *fileName = [dataPath lastPathComponent];
+                
+                NSRange isCorrectFile = [dataPath rangeOfString: collectionName];
+                if(isCorrectFile.location != NSNotFound)
+                {
+                    stream = [[NSInputStream alloc] initWithFileAtPath: fileName];
+                    fileRoot = dataPath;
+                    break;
+                }
+            }
+        }
+        
+        //Read data
+        NSString *fileContent = [NSString stringWithContentsOfFile: fileRoot encoding:NSUTF8StringEncoding error:nil ];
+        //seperate by new Line
+        NSArray * lineByLineString = [fileContent componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+        
+        //then breakdown further
+        for(NSString *str in lineByLineString){
+            
+            NSArray *wrdArray = [str componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString: @","]];
+            NSString *firstWord = [wrdArray objectAtIndex:0];
+            Item *newItem = [[Item alloc] initWithName:firstWord
+                                                sounds:wrdArray
+                                             animation:firstWord];
+            [self.itemArray addObject:newItem];
+        }
+    }
+    [self setupLanguageDictionary];
+    return self;
+}
+
+-(void)setupLanguageDictionary
+{
     lmGenerator = [[LanguageModelGenerator alloc] init];
     // words = NSArray from sounds
-    for (Item *item in itemCollection)
+    for (Item *item in itemArray)
     {
         NSString *name = @"LanguageModelFile";  // same as item name + postfix
         NSError *err = [lmGenerator generateLanguageModelFromArray:item.possibleSounds withFilesNamed:name];

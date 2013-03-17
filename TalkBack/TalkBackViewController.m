@@ -25,9 +25,8 @@
 @synthesize pocketsphinxController;
 @synthesize fliteController;
 @synthesize slt;
+@synthesize itemModelArray;
 
-NSArray *itemModelArray;
-ItemCollection *itemCollection;
 
 - (void)dealloc
 {
@@ -47,8 +46,9 @@ ItemCollection *itemCollection;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-		itemCollection = [[ItemCollection alloc] init];
-		itemModelArray = [[NSArray alloc] init];
+	// OpenEar Language model generator
+        //lmGenerator = [[LanguageModelGenerator alloc] init];
+		self.itemModelArray = [[NSArray alloc] init];
 		[self.openEarsEventsObserver setDelegate:self];
     }
     return self;
@@ -57,8 +57,13 @@ ItemCollection *itemCollection;
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    ItemCollection *col = [[ItemCollection alloc] initWithCategory: @"All"];
 	// display categories
 	
+    for (Item *item in [col itemArray])
+    {
+        NSLog(@"name: %@, dictionary count: %i",[item displayName], [[item possibleSounds] count]);
+    }
     [super viewDidLoad];
 }
 
@@ -88,7 +93,6 @@ ItemCollection *itemCollection;
 // and swap the dictionary for sphinx controller
 - (void)loadViewWithItem: (NSInteger)modelIdx
 {
-
 	NSString* lmPath = @""; // path from model
 	NSString* dictPath = @""; // path from model
 	[self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dictPath languageModelIsJSGF:NO];

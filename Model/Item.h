@@ -19,5 +19,5 @@
 
 -(id) initWithName:(NSString*)displayName_
             sounds:(NSArray*)possibleSounds_
-         animation:(NSString*)animationUrl_;
+         animation:(NSString*)animName_;
 @end

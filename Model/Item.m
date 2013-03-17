@@ -8,7 +8,6 @@
 
 #import "Item.h"
 
-
 @implementation Item
 
 @synthesize displayName;
@@ -22,13 +21,14 @@
             sounds:(NSArray*)possibleSounds_
          animation:(NSString*)animName_
 {
-    
-    if(self = [super init]) {
+    self = [super init];
+    if(self)
+    {
         [self setDisplayName:displayName_];
         [self setPossibleSounds:possibleSounds_];
         [self setAnimName:animName_];
         
-        self.animationImages = [[NSMutableArray alloc] init];
+        animationImages = [[NSMutableArray alloc] initWithObjects:nil];
         imPath = nil;
         dictPath = nil;
         
