@@ -254,10 +254,11 @@
 - (BOOL)isPassedHypothesis:(NSString *)hypothesis
 {
 	NSArray *hypArray = [hypothesis componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString: @" "]];
-	for (NSString *hyp in hypArray) {
-		if ([[[self curItem] possibleSounds] containsObject:hyp]) {
+//	for (NSString *hyp in hypArray) {
+//		if ([[[self curItem] possibleSounds] containsObject:hyp]) {
+        if ([hypArray containsObject:[[[self curItem] possibleSounds] objectAtIndex:0]]) {
 			return YES;
-		}
+//		}
 	}
 	
 	return NO;
@@ -324,7 +325,7 @@
 	NSMutableArray *dicStats = [self.currentUserStats objectForKey:[curItem displayName]];
 	[dicStats replaceObjectAtIndex:1 withObject: [NSNumber numberWithInt:[[dicStats objectAtIndex:1] intValue]+1]];
 	
-	if(recognitionScore.intValue > -7000 && recognitionScore.intValue < -400 && [self isPassedHypothesis:hypothesis]){
+	if([self isPassedHypothesis:hypothesis]){
 		
 		[dicStats replaceObjectAtIndex:2 withObject: [NSNumber numberWithInt:[[dicStats objectAtIndex:2] intValue]+1]];
 		[dicStats replaceObjectAtIndex:3 withObject: [NSNumber numberWithInt:0]];

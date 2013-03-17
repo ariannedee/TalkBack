@@ -18,6 +18,7 @@
 		55910C0516F4397900175880 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55910C0316F4397900175880 /* MainWindow.xib */; };
 		55910C0816F4397900175880 /* TalkBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55910C0716F4397900175880 /* TalkBackViewController.m */; };
 		55910C0B16F4397900175880 /* TalkBackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55910C0916F4397900175880 /* TalkBackViewController.xib */; };
+		6EFA90D616F64C9C00266F73 /* Test.data in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA90D516F64C9C00266F73 /* Test.data */; };
 		8531A69C16F5136000893996 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 8531A69B16F5136000893996 /* Item.m */; };
 		8531A84F16F568D300893996 /* DOG_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 8531A84716F568D300893996 /* DOG_01.png */; };
 		8531A85016F568D300893996 /* DOG_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 8531A84816F568D300893996 /* DOG_02.png */; };
@@ -108,6 +109,7 @@
 		55910C0616F4397900175880 /* TalkBackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TalkBackViewController.h; sourceTree = "<group>"; };
 		55910C0716F4397900175880 /* TalkBackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalkBackViewController.m; sourceTree = "<group>"; };
 		55910C0A16F4397900175880 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TalkBackViewController.xib; sourceTree = "<group>"; };
+		6EFA90D516F64C9C00266F73 /* Test.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test.data; sourceTree = "<group>"; };
 		8531A69A16F5136000893996 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		8531A69B16F5136000893996 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		8531A84716F568D300893996 /* DOG_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DOG_01.png; path = media/DOG_01.png; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 		4924F44E16F516C1002796E1 /* Collections */ = {
 			isa = PBXGroup;
 			children = (
+				6EFA90D516F64C9C00266F73 /* Test.data */,
 				4924F44F16F516FC002796E1 /* All.data */,
 				8531AA8516F58ED600893996 /* TOYS.data */,
 				8531AA8716F58F3200893996 /* FOOD.data */,
@@ -489,6 +492,7 @@
 				8531AA8A16F58F5600893996 /* ANIMALS.data in Resources */,
 				8531AABD16F59ABF00893996 /* JUICE_000.png in Resources */,
 				8531AABE16F59ABF00893996 /* JUICE_001.png in Resources */,
+				6EFA90D616F64C9C00266F73 /* Test.data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
