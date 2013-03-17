@@ -8,6 +8,7 @@
 
 #import "TalkBackViewController.h"
 #import "Item.h"
+#import "ItemCollection.h"
 
 @implementation TalkBackViewController
 
@@ -19,8 +20,7 @@
 @synthesize pocketsphinxController;
 @synthesize fliteController;
 @synthesize slt;
-
-NSArray *itemModelArray;
+@synthesize itemModelArray;
 
 - (void)dealloc
 {
@@ -42,7 +42,7 @@ NSArray *itemModelArray;
     if (self) {
 		// OpenEar Language model generator
         //lmGenerator = [[LanguageModelGenerator alloc] init];
-		itemModelArray = [[NSArray alloc] init];
+		self.itemModelArray = [[NSArray alloc] init];
 		[self.openEarsEventsObserver setDelegate:self];
     }
     return self;
@@ -51,8 +51,13 @@ NSArray *itemModelArray;
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    ItemCollection *col = [[ItemCollection alloc] initWithCategory: @"All"];
 	// display categories
 	
+    for (Item *item in [col itemArray])
+    {
+        NSLog(@"name: %@, dictionary count: %i",[item displayName], [[item possibleSounds] count]);
+    }
     [super viewDidLoad];
 }
 
@@ -81,7 +86,6 @@ NSArray *itemModelArray;
 // and swap the dictionary for sphinx controller
 - (void)loadViewWithItem: (NSInteger)modelIdx
 {
-
 	NSString* lmPath = @""; // path from model
 	NSString* dictPath = @""; // path from model
 	[self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dictPath languageModelIsJSGF:NO];

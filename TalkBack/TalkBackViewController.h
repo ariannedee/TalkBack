@@ -23,10 +23,12 @@
 @property (nonatomic, retain) IBOutlet UIButton *buttonNext;
 @property (nonatomic, retain) IBOutlet UIButton *buttonPrev;
 @property (nonatomic, retain) IBOutlet UIImageView *image;
-@property(nonatomic, retain) PocketsphinxController *pocketsphinxController;
-@property(nonatomic, retain) OpenEarsEventsObserver *openEarsEventsObserver;
+@property (nonatomic, retain) PocketsphinxController *pocketsphinxController;
+@property (nonatomic, retain) OpenEarsEventsObserver *openEarsEventsObserver;
 @property (nonatomic, retain) FliteController *fliteController;
 @property (nonatomic, retain) Slt *slt;
+
+@property (nonatomic, retain) NSArray *itemModelArray;
 
 - (IBAction)onButtonPushed:(id)sender;
 - (IBAction)onButtonNextPushed:(id)sender;

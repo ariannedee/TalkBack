@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+@class LanguageModelGenerator;
+
 @interface ItemCollection : NSObject
 
-@property(nonatomic, retain) NSMutableArray* itemCollection;
+@property(nonatomic, retain) NSMutableArray* itemArray;
+@property(nonatomic, retain) LanguageModelGenerator *lmGenerator;
+
+-(id)initWithCategory:(NSString *)collectionName;
+-(void)setupLanguageDictionary;
 
 @end
