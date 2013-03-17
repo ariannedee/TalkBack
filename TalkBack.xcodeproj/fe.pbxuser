@@ -31,9 +31,9 @@
 		);
 		breakpoints = (
 			8531AA8F16F590CB00893996 /* ItemCollection.m:25 */,
-			8531AB4B16F5D44800893996 /* TalkBackViewController.m:161 */,
-			8531AB6A16F5D5BD00893996 /* TalkBackViewController.m:64 */,
-			8531AB7816F5E78900893996 /* TalkBackViewController.m:318 */,
+			8531AB4B16F5D44800893996 /* TalkBackViewController.m:170 */,
+			8531AB6A16F5D5BD00893996 /* TalkBackViewController.m:73 */,
+			8531AB7816F5E78900893996 /* TalkBackViewController.m:327 */,
 		);
 		codeSenseManager = 8540787216F44E1C00021164 /* Code sense */;
 		executables = (
@@ -526,6 +526,8 @@
 			8531ABA316F5F61700893996 /* PBXTextBookmark */ = 8531ABA316F5F61700893996 /* PBXTextBookmark */;
 			8531ABA416F5F61700893996 /* PBXTextBookmark */ = 8531ABA416F5F61700893996 /* PBXTextBookmark */;
 			8531ABA516F5F61700893996 /* PBXTextBookmark */ = 8531ABA516F5F61700893996 /* PBXTextBookmark */;
+			8531ABA616F5F79900893996 /* PBXTextBookmark */ = 8531ABA616F5F79900893996 /* PBXTextBookmark */;
+			8531ABA716F5F79900893996 /* PBXTextBookmark */ = 8531ABA716F5F79900893996 /* PBXTextBookmark */;
 			8540795416F45F7600021164 = 8540795416F45F7600021164 /* PBXTextBookmark */;
 			8540795516F45F7600021164 = 8540795516F45F7600021164 /* PBXTextBookmark */;
 		};
@@ -573,9 +575,9 @@
 	};
 	55910C0716F4397900175880 /* TalkBackViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1174, 5876}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1174, 6110}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{8015, 2366}";
+			sepNavVisRange = "{8528, 2521}";
 			sepNavWindowFrame = "{{62, 0}, {1102, 878}}";
 		};
 	};
@@ -767,7 +769,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 44";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1752;
 		vrLoc = 464;
@@ -781,7 +783,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 44";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1777;
 		vrLoc = 464;
@@ -831,7 +833,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 88";
 		rLen = 232;
-		rLoc = 7888;
+		rLoc = 8364;
 		rType = 0;
 		vrLen = 1512;
 		vrLoc = 0;
@@ -841,7 +843,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 120";
 		rLen = 0;
-		rLoc = 10998;
+		rLoc = 11474;
 		rType = 0;
 		vrLen = 1488;
 		vrLoc = 2094;
@@ -891,7 +893,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 119";
 		rLen = 0;
-		rLoc = 10884;
+		rLoc = 11360;
 		rType = 0;
 		vrLen = 1518;
 		vrLoc = 2119;
@@ -931,7 +933,7 @@
 		comments = "Unused variable 'words5'";
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		rLen = 0;
-		rLoc = 88;
+		rLoc = 97;
 		rType = 1;
 	};
 	851C29B316F4EDB2007ADBE8 /* PBXTextBookmark */ = {
@@ -939,7 +941,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 48";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 449;
 		vrLoc = 963;
@@ -959,7 +961,7 @@
 		comments = "Unused variable 'words5'";
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		rLen = 0;
-		rLoc = 88;
+		rLoc = 97;
 		rType = 1;
 	};
 	851C29B616F4EDB7007ADBE8 /* PBXTextBookmark */ = {
@@ -967,7 +969,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 48";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1502;
 		vrLoc = 465;
@@ -977,7 +979,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 89";
 		rLen = 0;
-		rLoc = 7919;
+		rLoc = 8395;
 		rType = 0;
 		vrLen = 1518;
 		vrLoc = 2119;
@@ -1017,7 +1019,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 48";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1502;
 		vrLoc = 465;
@@ -1027,7 +1029,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 122";
 		rLen = 0;
-		rLoc = 11162;
+		rLoc = 11638;
 		rType = 0;
 		vrLen = 1459;
 		vrLoc = 2119;
@@ -1067,7 +1069,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 48";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1507;
 		vrLoc = 465;
@@ -1077,7 +1079,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 47";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1612;
 		vrLoc = 48;
@@ -1117,7 +1119,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 48";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1507;
 		vrLoc = 465;
@@ -1127,7 +1129,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 119";
 		rLen = 0;
-		rLoc = 10966;
+		rLoc = 11442;
 		rType = 0;
 		vrLen = 1501;
 		vrLoc = 2234;
@@ -1167,7 +1169,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 48";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1507;
 		vrLoc = 465;
@@ -1177,7 +1179,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 119";
 		rLen = 0;
-		rLoc = 10921;
+		rLoc = 11397;
 		rType = 0;
 		vrLen = 1495;
 		vrLoc = 2362;
@@ -1217,7 +1219,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 48";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1537;
 		vrLoc = 465;
@@ -1227,7 +1229,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 44";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1958;
 		vrLoc = 499;
@@ -1267,7 +1269,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 48";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1537;
 		vrLoc = 465;
@@ -1277,7 +1279,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 119";
 		rLen = 0;
-		rLoc = 10964;
+		rLoc = 11440;
 		rType = 0;
 		vrLen = 1585;
 		vrLoc = 2297;
@@ -1317,7 +1319,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 48";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1537;
 		vrLoc = 465;
@@ -1327,7 +1329,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 119";
 		rLen = 0;
-		rLoc = 10889;
+		rLoc = 11365;
 		rType = 0;
 		vrLen = 1585;
 		vrLoc = 2297;
@@ -1367,7 +1369,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 48";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1537;
 		vrLoc = 465;
@@ -1397,7 +1399,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 119";
 		rLen = 0;
-		rLoc = 10889;
+		rLoc = 11365;
 		rType = 0;
 		vrLen = 1585;
 		vrLoc = 2297;
@@ -1427,7 +1429,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 50";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1489;
 		vrLoc = 510;
@@ -1437,7 +1439,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 119";
 		rLen = 0;
-		rLoc = 10889;
+		rLoc = 11365;
 		rType = 0;
 		vrLen = 1585;
 		vrLoc = 2297;
@@ -1447,7 +1449,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 138";
 		rLen = 0;
-		rLoc = 11113;
+		rLoc = 11589;
 		rType = 0;
 		vrLen = 1560;
 		vrLoc = 2745;
@@ -1477,7 +1479,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 50";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1489;
 		vrLoc = 510;
@@ -1487,7 +1489,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 138";
 		rLen = 0;
-		rLoc = 11113;
+		rLoc = 11589;
 		rType = 0;
 		vrLen = 1569;
 		vrLoc = 2745;
@@ -1517,7 +1519,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 50";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 390;
 		vrLoc = 1170;
@@ -1527,7 +1529,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 50";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1489;
 		vrLoc = 510;
@@ -1537,7 +1539,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 138";
 		rLen = 0;
-		rLoc = 11109;
+		rLoc = 11585;
 		rType = 0;
 		vrLen = 1583;
 		vrLoc = 2745;
@@ -1604,7 +1606,7 @@
 		comments = "Can not use an object as parameter to a method";
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		rLen = 1;
-		rLoc = 241;
+		rLoc = 250;
 		rType = 1;
 	};
 	8531A6B816F522BC00893996 /* PBXTextBookmark */ = {
@@ -1612,7 +1614,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 65";
 		rLen = 0;
-		rLoc = 6116;
+		rLoc = 6592;
 		rType = 0;
 		vrLen = 518;
 		vrLoc = 1639;
@@ -1622,7 +1624,7 @@
 		comments = "Incompatible type for argument 1 of 'startListeningWithLanguageModelAtPath:dictionaryAtPath:languageModelIsJSGF:'";
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		rLen = 1;
-		rLoc = 88;
+		rLoc = 97;
 		rType = 1;
 	};
 	8531A6C216F5236300893996 /* PBXTextBookmark */ = {
@@ -1630,7 +1632,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 59";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 591;
 		vrLoc = 1336;
@@ -1654,7 +1656,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 57";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 784;
 		vrLoc = 0;
@@ -1694,7 +1696,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 121";
 		rLen = 0;
-		rLoc = 7466;
+		rLoc = 7942;
 		rType = 0;
 		vrLen = 1495;
 		vrLoc = 1993;
@@ -1738,7 +1740,7 @@
 		comments = "Expected identifier or '(' before '=' token";
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		rLen = 0;
-		rLoc = 55;
+		rLoc = 64;
 		rType = 1;
 	};
 	8531A74F16F5409300893996 /* PBXTextBookmark */ = {
@@ -1746,7 +1748,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 49";
 		rLen = 0;
-		rLoc = 1270;
+		rLoc = 1746;
 		rType = 0;
 		vrLen = 478;
 		vrLoc = 912;
@@ -1776,7 +1778,7 @@
 		comments = "Expected identifier or '(' before '=' token";
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		rLen = 0;
-		rLoc = 55;
+		rLoc = 64;
 		rType = 1;
 	};
 	8531A75D16F5409C00893996 /* PBXTextBookmark */ = {
@@ -1784,7 +1786,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 49";
 		rLen = 0;
-		rLoc = 1270;
+		rLoc = 1746;
 		rType = 0;
 		vrLen = 888;
 		vrLoc = 638;
@@ -1794,7 +1796,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 118";
 		rLen = 0;
-		rLoc = 7441;
+		rLoc = 7917;
 		rType = 0;
 		vrLen = 1610;
 		vrLoc = 651;
@@ -1804,7 +1806,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 49";
 		rLen = 0;
-		rLoc = 1270;
+		rLoc = 1746;
 		rType = 0;
 		vrLen = 1323;
 		vrLoc = 203;
@@ -1824,7 +1826,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 49";
 		rLen = 0;
-		rLoc = 1270;
+		rLoc = 1746;
 		rType = 0;
 		vrLen = 921;
 		vrLoc = 638;
@@ -1834,7 +1836,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 141";
 		rLen = 0;
-		rLoc = 6489;
+		rLoc = 6965;
 		rType = 0;
 		vrLen = 1236;
 		vrLoc = 2423;
@@ -1854,7 +1856,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 49";
 		rLen = 0;
-		rLoc = 1270;
+		rLoc = 1746;
 		rType = 0;
 		vrLen = 888;
 		vrLoc = 638;
@@ -1864,7 +1866,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 150";
 		rLen = 0;
-		rLoc = 6714;
+		rLoc = 7190;
 		rType = 0;
 		vrLen = 1038;
 		vrLoc = 3070;
@@ -1884,7 +1886,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 49";
 		rLen = 0;
-		rLoc = 1270;
+		rLoc = 1746;
 		rType = 0;
 		vrLen = 888;
 		vrLoc = 638;
@@ -1894,7 +1896,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 174";
 		rLen = 0;
-		rLoc = 7485;
+		rLoc = 7961;
 		rType = 0;
 		vrLen = 1190;
 		vrLoc = 2936;
@@ -1914,7 +1916,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 50";
 		rLen = 0;
-		rLoc = 1270;
+		rLoc = 1746;
 		rType = 0;
 		vrLen = 888;
 		vrLoc = 656;
@@ -1944,7 +1946,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 50";
 		rLen = 0;
-		rLoc = 1270;
+		rLoc = 1746;
 		rType = 0;
 		vrLen = 888;
 		vrLoc = 656;
@@ -1954,7 +1956,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 155";
 		rLen = 0;
-		rLoc = 6713;
+		rLoc = 7189;
 		rType = 0;
 		vrLen = 1154;
 		vrLoc = 2799;
@@ -1974,7 +1976,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 50";
 		rLen = 0;
-		rLoc = 1270;
+		rLoc = 1746;
 		rType = 0;
 		vrLen = 888;
 		vrLoc = 656;
@@ -1984,7 +1986,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 153";
 		rLen = 0;
-		rLoc = 6628;
+		rLoc = 7104;
 		rType = 0;
 		vrLen = 1097;
 		vrLoc = 2799;
@@ -2140,7 +2142,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 144";
 		rLen = 0;
-		rLoc = 6615;
+		rLoc = 7091;
 		rType = 0;
 		vrLen = 806;
 		vrLoc = 2922;
@@ -2164,7 +2166,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 114";
 		rLen = 0;
-		rLoc = 5883;
+		rLoc = 6359;
 		rType = 0;
 		vrLen = 1681;
 		vrLoc = 1756;
@@ -2174,7 +2176,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 114";
 		rLen = 0;
-		rLoc = 5883;
+		rLoc = 6359;
 		rType = 0;
 		vrLen = 1633;
 		vrLoc = 1804;
@@ -2234,7 +2236,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 114";
 		rLen = 0;
-		rLoc = 5883;
+		rLoc = 6359;
 		rType = 0;
 		vrLen = 1591;
 		vrLoc = 1874;
@@ -2274,7 +2276,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 99";
 		rLen = 0;
-		rLoc = 4517;
+		rLoc = 4993;
 		rType = 0;
 		vrLen = 1481;
 		vrLoc = 1169;
@@ -2284,7 +2286,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 99";
 		rLen = 0;
-		rLoc = 4517;
+		rLoc = 4993;
 		rType = 0;
 		vrLen = 1478;
 		vrLoc = 1172;
@@ -2354,7 +2356,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 94";
 		rLen = 0;
-		rLoc = 4289;
+		rLoc = 4765;
 		rType = 0;
 		vrLen = 1548;
 		vrLoc = 1969;
@@ -2378,7 +2380,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 91";
 		rLen = 0;
-		rLoc = 4211;
+		rLoc = 4687;
 		rType = 0;
 		vrLen = 965;
 		vrLoc = 1648;
@@ -2418,7 +2420,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 102";
 		rLen = 0;
-		rLoc = 4517;
+		rLoc = 4993;
 		rType = 0;
 		vrLen = 1573;
 		vrLoc = 1371;
@@ -2475,7 +2477,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 102";
 		rLen = 0;
-		rLoc = 4517;
+		rLoc = 4993;
 		rType = 0;
 		vrLen = 1573;
 		vrLoc = 1371;
@@ -2505,7 +2507,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 102";
 		rLen = 0;
-		rLoc = 4517;
+		rLoc = 4993;
 		rType = 0;
 		vrLen = 1136;
 		vrLoc = 3460;
@@ -2515,7 +2517,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 102";
 		rLen = 0;
-		rLoc = 4517;
+		rLoc = 4993;
 		rType = 0;
 		vrLen = 1094;
 		vrLoc = 3502;
@@ -2555,7 +2557,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 180";
 		rLen = 0;
-		rLoc = 7657;
+		rLoc = 8133;
 		rType = 0;
 		vrLen = 1050;
 		vrLoc = 3416;
@@ -2595,7 +2597,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 180";
 		rLen = 0;
-		rLoc = 7657;
+		rLoc = 8133;
 		rType = 0;
 		vrLen = 1575;
 		vrLoc = 1671;
@@ -2659,7 +2661,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 199";
 		rLen = 0;
-		rLoc = 8121;
+		rLoc = 8597;
 		rType = 0;
 		vrLen = 1207;
 		vrLoc = 3576;
@@ -2669,7 +2671,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 199";
 		rLen = 0;
-		rLoc = 8121;
+		rLoc = 8597;
 		rType = 0;
 		vrLen = 1183;
 		vrLoc = 3628;
@@ -2759,7 +2761,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 199";
 		rLen = 0;
-		rLoc = 8121;
+		rLoc = 8597;
 		rType = 0;
 		vrLen = 1584;
 		vrLoc = 1394;
@@ -2798,7 +2800,7 @@
 		isa = PBXTextBookmark;
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		rLen = 0;
-		rLoc = 268;
+		rLoc = 277;
 		rType = 1;
 	};
 	8531A8E816F56D1700893996 /* PBXTextBookmark */ = {
@@ -2806,7 +2808,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 175";
 		rLen = 0;
-		rLoc = 7512;
+		rLoc = 7988;
 		rType = 0;
 		vrLen = 602;
 		vrLoc = 3722;
@@ -2826,7 +2828,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 199";
 		rLen = 0;
-		rLoc = 8121;
+		rLoc = 8597;
 		rType = 0;
 		vrLen = 1584;
 		vrLoc = 1394;
@@ -2856,7 +2858,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 175";
 		rLen = 0;
-		rLoc = 7512;
+		rLoc = 7988;
 		rType = 0;
 		vrLen = 602;
 		vrLoc = 3722;
@@ -2866,7 +2868,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 175";
 		rLen = 0;
-		rLoc = 7512;
+		rLoc = 7988;
 		rType = 0;
 		vrLen = 573;
 		vrLoc = 3698;
@@ -2876,7 +2878,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 199";
 		rLen = 0;
-		rLoc = 8121;
+		rLoc = 8597;
 		rType = 0;
 		vrLen = 1495;
 		vrLoc = 4626;
@@ -2934,7 +2936,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 237";
 		rLen = 12;
-		rLoc = 10963;
+		rLoc = 11439;
 		rType = 0;
 		vrLen = 730;
 		vrLoc = 5445;
@@ -2974,7 +2976,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 199";
 		rLen = 0;
-		rLoc = 8121;
+		rLoc = 8597;
 		rType = 0;
 		vrLen = 1515;
 		vrLoc = 4661;
@@ -3014,7 +3016,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 45";
 		rLen = 0;
-		rLoc = 1270;
+		rLoc = 1746;
 		rType = 0;
 		vrLen = 1371;
 		vrLoc = 711;
@@ -3084,7 +3086,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 45";
 		rLen = 0;
-		rLoc = 1270;
+		rLoc = 1746;
 		rType = 0;
 		vrLen = 1497;
 		vrLoc = 770;
@@ -3114,7 +3116,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 214";
 		rLen = 0;
-		rLoc = 10546;
+		rLoc = 11022;
 		rType = 0;
 		vrLen = 1434;
 		vrLoc = 4195;
@@ -3154,7 +3156,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 50";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1862;
 		rType = 0;
 		vrLen = 1232;
 		vrLoc = 615;
@@ -3194,7 +3196,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 219";
 		rLen = 0;
-		rLoc = 10754;
+		rLoc = 11230;
 		rType = 0;
 		vrLen = 1546;
 		vrLoc = 4298;
@@ -3311,7 +3313,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 180";
 		rLen = 0;
-		rLoc = 7793;
+		rLoc = 8269;
 		rType = 0;
 		vrLen = 1187;
 		vrLoc = 3598;
@@ -3361,7 +3363,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 100";
 		rLen = 0;
-		rLoc = 5582;
+		rLoc = 6058;
 		rType = 0;
 		vrLen = 1069;
 		vrLoc = 1610;
@@ -3381,7 +3383,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 180";
 		rLen = 0;
-		rLoc = 7793;
+		rLoc = 8269;
 		rType = 0;
 		vrLen = 1035;
 		vrLoc = 2811;
@@ -3401,7 +3403,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 100";
 		rLen = 0;
-		rLoc = 5582;
+		rLoc = 6058;
 		rType = 0;
 		vrLen = 1092;
 		vrLoc = 1610;
@@ -3411,7 +3413,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 100";
 		rLen = 0;
-		rLoc = 5582;
+		rLoc = 6058;
 		rType = 0;
 		vrLen = 1084;
 		vrLoc = 1610;
@@ -3421,7 +3423,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 100";
 		rLen = 0;
-		rLoc = 5582;
+		rLoc = 6058;
 		rType = 0;
 		vrLen = 1552;
 		vrLoc = 1660;
@@ -3451,7 +3453,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 100";
 		rLen = 0;
-		rLoc = 5582;
+		rLoc = 6058;
 		rType = 0;
 		vrLen = 1084;
 		vrLoc = 1610;
@@ -3461,7 +3463,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 167";
 		rLen = 22;
-		rLoc = 7519;
+		rLoc = 7995;
 		rType = 0;
 		vrLen = 1192;
 		vrLoc = 3372;
@@ -3491,7 +3493,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 100";
 		rLen = 0;
-		rLoc = 5582;
+		rLoc = 6058;
 		rType = 0;
 		vrLen = 1108;
 		vrLoc = 1610;
@@ -3501,7 +3503,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 75";
 		rLen = 0;
-		rLoc = 2941;
+		rLoc = 3417;
 		rType = 0;
 		vrLen = 1568;
 		vrLoc = 1102;
@@ -3531,7 +3533,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 100";
 		rLen = 0;
-		rLoc = 5582;
+		rLoc = 6058;
 		rType = 0;
 		vrLen = 1112;
 		vrLoc = 1610;
@@ -3541,7 +3543,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 75";
 		rLen = 0;
-		rLoc = 2932;
+		rLoc = 3408;
 		rType = 0;
 		vrLen = 1632;
 		vrLoc = 1346;
@@ -3590,7 +3592,7 @@
 		isa = PBXTextBookmark;
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		rLen = 13;
-		rLoc = 11410;
+		rLoc = 11886;
 		rType = 0;
 	};
 	8531A99916F57FF300893996 /* TalkBackViewController.m */ = {
@@ -3610,7 +3612,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 245";
 		rLen = 13;
-		rLoc = 11410;
+		rLoc = 11886;
 		rType = 0;
 		vrLen = 369;
 		vrLoc = 5810;
@@ -3629,7 +3631,7 @@
 		isa = PBXTextBookmark;
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		rLen = 13;
-		rLoc = 2982;
+		rLoc = 3458;
 		rType = 0;
 	};
 	8531A9A116F5814C00893996 /* PBXTextBookmark */ = {
@@ -3637,7 +3639,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 74";
 		rLen = 13;
-		rLoc = 2982;
+		rLoc = 3458;
 		rType = 0;
 		vrLen = 997;
 		vrLoc = 1237;
@@ -3646,7 +3648,7 @@
 		isa = PBXTextBookmark;
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		rLen = 1;
-		rLoc = 116;
+		rLoc = 125;
 		rType = 1;
 	};
 	8531A9A316F5814C00893996 /* PBXTextBookmark */ = {
@@ -3654,7 +3656,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 110";
 		rLen = 18;
-		rLoc = 5861;
+		rLoc = 6337;
 		rType = 0;
 		vrLen = 1315;
 		vrLoc = 2161;
@@ -3688,7 +3690,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 83";
 		rLen = 0;
-		rLoc = 3267;
+		rLoc = 3743;
 		rType = 0;
 		vrLen = 1682;
 		vrLoc = 1237;
@@ -3698,7 +3700,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 103";
 		rLen = 0;
-		rLoc = 4517;
+		rLoc = 4993;
 		rType = 0;
 		vrLen = 1735;
 		vrLoc = 1532;
@@ -3708,7 +3710,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 238";
 		rLen = 0;
-		rLoc = 11073;
+		rLoc = 11549;
 		rType = 0;
 		vrLen = 1546;
 		vrLoc = 4913;
@@ -3718,7 +3720,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 237";
 		rLen = 0;
-		rLoc = 11073;
+		rLoc = 11549;
 		rType = 0;
 		vrLen = 1550;
 		vrLoc = 4725;
@@ -3728,7 +3730,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 93";
 		rLen = 0;
-		rLoc = 4211;
+		rLoc = 4687;
 		rType = 0;
 		vrLen = 1686;
 		vrLoc = 1131;
@@ -3777,7 +3779,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 133";
 		rLen = 16;
-		rLoc = 6348;
+		rLoc = 6824;
 		rType = 0;
 		vrLen = 857;
 		vrLoc = 2724;
@@ -3847,7 +3849,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 93";
 		rLen = 0;
-		rLoc = 4211;
+		rLoc = 4687;
 		rType = 0;
 		vrLen = 1593;
 		vrLoc = 1131;
@@ -3877,7 +3879,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 93";
 		rLen = 0;
-		rLoc = 4211;
+		rLoc = 4687;
 		rType = 0;
 		vrLen = 1593;
 		vrLoc = 1131;
@@ -3927,7 +3929,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 93";
 		rLen = 0;
-		rLoc = 4211;
+		rLoc = 4687;
 		rType = 0;
 		vrLen = 1593;
 		vrLoc = 1131;
@@ -3947,7 +3949,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 93";
 		rLen = 0;
-		rLoc = 4211;
+		rLoc = 4687;
 		rType = 0;
 		vrLen = 1593;
 		vrLoc = 1131;
@@ -3984,7 +3986,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 93";
 		rLen = 0;
-		rLoc = 4211;
+		rLoc = 4687;
 		rType = 0;
 		vrLen = 1593;
 		vrLoc = 1131;
@@ -4018,7 +4020,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 46";
 		rLen = 0;
-		rLoc = 1047;
+		rLoc = 1523;
 		rType = 0;
 		vrLen = 1157;
 		vrLoc = 395;
@@ -4048,7 +4050,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 69";
 		rLen = 0;
-		rLoc = 2424;
+		rLoc = 2900;
 		rType = 0;
 		vrLen = 1210;
 		vrLoc = 905;
@@ -4058,7 +4060,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 133";
 		rLen = 0;
-		rLoc = 4125;
+		rLoc = 4601;
 		rType = 0;
 		vrLen = 1732;
 		vrLoc = 3211;
@@ -4089,7 +4091,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 170;
+		rLoc = 179;
 		rType = 1;
 	};
 	8531AAFD16F5D03C00893996 /* PBXTextBookmark */ = {
@@ -4097,7 +4099,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 167";
 		rLen = 0;
-		rLoc = 5245;
+		rLoc = 5721;
 		rType = 0;
 		vrLen = 1962;
 		vrLoc = 3293;
@@ -4117,7 +4119,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 79";
 		rLen = 0;
-		rLoc = 2334;
+		rLoc = 2810;
 		rType = 0;
 		vrLen = 1679;
 		vrLoc = 4089;
@@ -4127,7 +4129,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 79";
 		rLen = 0;
-		rLoc = 2334;
+		rLoc = 2810;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 3;
@@ -4147,7 +4149,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 79";
 		rLen = 0;
-		rLoc = 2334;
+		rLoc = 2810;
 		rType = 0;
 		vrLen = 1019;
 		vrLoc = 45;
@@ -4167,7 +4169,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 79";
 		rLen = 0;
-		rLoc = 2334;
+		rLoc = 2810;
 		rType = 0;
 		vrLen = 1469;
 		vrLoc = 598;
@@ -4268,7 +4270,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 140;
+		rLoc = 149;
 		rType = 1;
 	};
 	8531AB4316F5D43000893996 /* PBXTextBookmark */ = {
@@ -4276,7 +4278,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 140";
 		rLen = 0;
-		rLoc = 4078;
+		rLoc = 4554;
 		rType = 0;
 		vrLen = 628;
 		vrLoc = 3573;
@@ -4286,7 +4288,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 140";
 		rLen = 0;
-		rLoc = 4078;
+		rLoc = 4554;
 		rType = 0;
 		vrLen = 699;
 		vrLoc = 3573;
@@ -4316,12 +4318,12 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 140";
 		rLen = 0;
-		rLoc = 4078;
+		rLoc = 4554;
 		rType = 0;
 		vrLen = 699;
 		vrLoc = 3573;
 	};
-	8531AB4B16F5D44800893996 /* TalkBackViewController.m:161 */ = {
+	8531AB4B16F5D44800893996 /* TalkBackViewController.m:170 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -4333,7 +4335,7 @@
 		functionName = "-unloadItemModels";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 161;
+		lineNumber = 170;
 		location = TalkBack;
 		modificationTime = 385215240.193438;
 		originalNumberOfMultipleMatches = 1;
@@ -4354,7 +4356,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 171";
 		rLen = 27;
-		rLoc = 5248;
+		rLoc = 5724;
 		rType = 0;
 		vrLen = 1600;
 		vrLoc = 4465;
@@ -4364,7 +4366,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 171";
 		rLen = 27;
-		rLoc = 5248;
+		rLoc = 5724;
 		rType = 0;
 		vrLen = 1597;
 		vrLoc = 4468;
@@ -4384,7 +4386,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 181";
 		rLen = 0;
-		rLoc = 5513;
+		rLoc = 5989;
 		rType = 0;
 		vrLen = 1560;
 		vrLoc = 4581;
@@ -4404,7 +4406,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 181";
 		rLen = 0;
-		rLoc = 5513;
+		rLoc = 5989;
 		rType = 0;
 		vrLen = 1418;
 		vrLoc = 1211;
@@ -4414,7 +4416,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 181";
 		rLen = 0;
-		rLoc = 5513;
+		rLoc = 5989;
 		rType = 0;
 		vrLen = 1414;
 		vrLoc = 1215;
@@ -4434,7 +4436,7 @@
 		fRef = 8531A99916F57FF300893996 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 181";
 		rLen = 0;
-		rLoc = 5513;
+		rLoc = 5989;
 		rType = 0;
 		vrLen = 1476;
 		vrLoc = 1246;
@@ -4454,7 +4456,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 181";
 		rLen = 0;
-		rLoc = 5513;
+		rLoc = 5989;
 		rType = 0;
 		vrLen = 1476;
 		vrLoc = 1246;
@@ -4469,7 +4471,7 @@
 		vrLen = 1818;
 		vrLoc = 636;
 	};
-	8531AB6A16F5D5BD00893996 /* TalkBackViewController.m:64 */ = {
+	8531AB6A16F5D5BD00893996 /* TalkBackViewController.m:73 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -4481,7 +4483,7 @@
 		functionName = "-viewDidLoad";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 64;
+		lineNumber = 73;
 		location = TalkBack;
 		modificationTime = 385215180.801609;
 		originalNumberOfMultipleMatches = 1;
@@ -4492,7 +4494,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 181";
 		rLen = 0;
-		rLoc = 5513;
+		rLoc = 5989;
 		rType = 0;
 		vrLen = 1601;
 		vrLoc = 4270;
@@ -4507,7 +4509,7 @@
 		vrLen = 2019;
 		vrLoc = 3983;
 	};
-	8531AB7816F5E78900893996 /* TalkBackViewController.m:318 */ = {
+	8531AB7816F5E78900893996 /* TalkBackViewController.m:327 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -4519,7 +4521,7 @@
 		functionName = "-pocketsphinxDidReceiveHypothesis:recognitionScore:utteranceID:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 318;
+		lineNumber = 327;
 		location = TalkBack;
 		modificationTime = 385215201.069561;
 		originalNumberOfMultipleMatches = 1;
@@ -4530,7 +4532,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 336";
 		rLen = 0;
-		rLoc = 10076;
+		rLoc = 10552;
 		rType = 0;
 		vrLen = 1993;
 		vrLoc = 8442;
@@ -4540,7 +4542,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 336";
 		rLen = 0;
-		rLoc = 10076;
+		rLoc = 10552;
 		rType = 0;
 		vrLen = 1978;
 		vrLoc = 8458;
@@ -4560,7 +4562,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 319";
 		rLen = 0;
-		rLoc = 9179;
+		rLoc = 9655;
 		rType = 0;
 		vrLen = 1985;
 		vrLoc = 8458;
@@ -4580,7 +4582,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 318";
 		rLen = 0;
-		rLoc = 9091;
+		rLoc = 9567;
 		rType = 0;
 		vrLen = 2153;
 		vrLoc = 8508;
@@ -4600,7 +4602,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 233";
 		rLen = 0;
-		rLoc = 6759;
+		rLoc = 7235;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 6688;
@@ -4670,7 +4672,7 @@
 		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
 		name = "TalkBackViewController.m: 316";
 		rLen = 0;
-		rLoc = 8849;
+		rLoc = 9325;
 		rType = 0;
 		vrLen = 2060;
 		vrLoc = 8399;
@@ -4694,6 +4696,26 @@
 		rType = 0;
 		vrLen = 2366;
 		vrLoc = 8015;
+	};
+	8531ABA616F5F79900893996 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
+		name = "TalkBackViewController.m: 55";
+		rLen = 0;
+		rLoc = 1435;
+		rType = 0;
+		vrLen = 1399;
+		vrLoc = 540;
+	};
+	8531ABA716F5F79900893996 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55910C0716F4397900175880 /* TalkBackViewController.m */;
+		name = "TalkBackViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2521;
+		vrLoc = 8528;
 	};
 	8540786816F44E0A00021164 /* TalkBack */ = {
 		isa = PBXExecutable;

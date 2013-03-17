@@ -44,6 +44,15 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+ /*
+  crazy ugly implementation for storing stats to plist
+  should refactor to its on model class later.
+  flow:
+  user_stats.plist -> load to fullUserStats(mutableArray) -> creates currentUserStats(mutableDict) for current stats only
+  -> any update would affect only values in currentUserStats -> on level change, move the data to fullUserStats and create new tuple ->
+  on program terminates -> move all data back to fullUserStats, then save fullUserStats to plist.
+  */
+
 - (NSString *) saveFilePath
 {
 	NSArray *path =	NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
