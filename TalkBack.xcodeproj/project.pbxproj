@@ -349,8 +349,6 @@
 				8540789416F44E3F00021164 /* OpenEars2.gram in Resources */,
 				8540789516F44E3F00021164 /* OpenEarsCorpus.txt in Resources */,
 				8531A6A816F51A7800893996 /* swirl.jpg in Resources */,
-<<<<<<< HEAD
-				4924F45016F516FC002796E1 /* All in Resources */,
 				6EFD405E16F53E8D00A31DBA /* bb00.png in Resources */,
 				6EFD405F16F53E8D00A31DBA /* bb01.png in Resources */,
 				6EFD406016F53E8D00A31DBA /* bb02.png in Resources */,
@@ -370,20 +368,9 @@
 				6EFD406E16F53E8D00A31DBA /* bb16.png in Resources */,
 				6EFD406F16F53E8D00A31DBA /* bb17.png in Resources */,
 				6EFD407016F53E8D00A31DBA /* bb18.png in Resources */,
-=======
-				6ED274DE16F51E1C000E260F /* Balls_bounce_00.png in Resources */,
-				6ED274DF16F51E1C000E260F /* Balls_bounce_01.png in Resources */,
-				6ED274E016F51E1C000E260F /* Balls_bounce_02.png in Resources */,
-				6ED274E116F51E1C000E260F /* Balls_bounce_03.png in Resources */,
-				6ED274E216F51E1C000E260F /* Balls_bounce_04.png in Resources */,
-				6ED274E916F521C2000E260F /* popcorn_01.png in Resources */,
-				6ED274EA16F521C2000E260F /* popcorn_02.png in Resources */,
-				6ED274EB16F521C2000E260F /* popcorn_03.png in Resources */,
-				6ED274EC16F521C2000E260F /* popcorn_04.png in Resources */,
-				6ED274ED16F521C2000E260F /* popcorn_05.png in Resources */,
-				6ED274EE16F521C2000E260F /* popcorn_06.png in Resources */,
+
 				4924F45016F516FC002796E1 /* All.data in Resources */,
->>>>>>> master
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
