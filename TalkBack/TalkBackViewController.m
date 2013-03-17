@@ -30,6 +30,8 @@
 @synthesize curItem;
 @synthesize fullUserStats;
 @synthesize currentUserStats;
+@synthesize listening;
+@synthesize stats;
 
 - (void)dealloc
 {
@@ -73,20 +75,24 @@
 	NSString *myPath = [self saveFilePath];
 	BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:myPath];
 	self.currentUserStats = [[NSMutableDictionary alloc] init];
-	if (fileExists)
+	
+    [self.stats setText:@"WORD \t\t ATTEMPT \t\t SUCCESS \t\t FAIL"];
+    
+    if (fileExists)
 	{		
 		self.fullUserStats = [[NSMutableArray alloc] initWithContentsOfFile:myPath];
 		// loop through the stat to fill the dictionary with only data that is current
 		for (int i = 0; i < [self.fullUserStats count]; i++) {
 			// stats[0] = word, [1]=level, [2]=#ofattempt, [3]=#ofsuccess, [4]=consecutiveFail, [5]=isCurrent
-			NSArray *stats = [self.fullUserStats objectAtIndex:i];
-			if ([[stats objectAtIndex:5] intValue] == 1) {
-				NSMutableArray *dicStats = [[NSMutableArray alloc] initWithObjects:[stats objectAtIndex:1], 
-									 [stats objectAtIndex:2],
-									 [stats objectAtIndex:3],
-									 [stats objectAtIndex:4],
+			NSArray *stat = [self.fullUserStats objectAtIndex:i];
+			if ([[stat objectAtIndex:5] intValue] == 1) {
+				NSMutableArray *dicStats = [[NSMutableArray alloc] initWithObjects:[stat objectAtIndex:1], 
+									 [stat objectAtIndex:2],
+									 [stat objectAtIndex:3],
+									 [stat objectAtIndex:4],
 									 [NSNumber numberWithInt:i], nil];
-				[self.currentUserStats setObject:dicStats forKey:[stats objectAtIndex:0]];
+				[self.currentUserStats setObject:dicStats forKey:[stat objectAtIndex:0]];
+                [[self stats] setText:[NSString stringWithFormat:@"%@\n %@ \t\t\t %@ \t\t\t\t %@ \t\t\t\t %@", self.stats.text, [stat objectAtIndex:0], [stat objectAtIndex:2], [stat objectAtIndex:3], [stat objectAtIndex:4]]];
 			}
 		}
 	}else {
@@ -234,6 +240,7 @@
 	buttonPrev.hidden = 1;
 	word.hidden = 1;
 	image.hidden = 1;
+    [[self stats] setHidden:NO];
 }
 
 - (void) hideCatButtons
@@ -247,6 +254,7 @@
 	buttonPrev.hidden = 0;
 	word.hidden = 0;
 	image.hidden = 0;
+    [[self stats] setHidden:YES];
 }
 
 #pragma mark - Helper functions
@@ -256,7 +264,7 @@
 	NSArray *hypArray = [hypothesis componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString: @" "]];
 //	for (NSString *hyp in hypArray) {
 //		if ([[[self curItem] possibleSounds] containsObject:hyp]) {
-        if ([hypArray containsObject:[[[self curItem] possibleSounds] objectAtIndex:0]]) {
+    if ([hypArray containsObject:[[curItem possibleSounds] objectAtIndex:0]]) {
 			return YES;
 //		}
 	}
@@ -324,8 +332,8 @@
 	
 	NSMutableArray *dicStats = [self.currentUserStats objectForKey:[curItem displayName]];
 	[dicStats replaceObjectAtIndex:1 withObject: [NSNumber numberWithInt:[[dicStats objectAtIndex:1] intValue]+1]];
-	
-	if([self isPassedHypothesis:hypothesis]){
+	//recognitionScore.integerValue > -7000
+	if(recognitionScore.integerValue > -5000 && [self isPassedHypothesis:hypothesis]){// && [self isPassedHypothesis:hypothesis]){
 		
 		[dicStats replaceObjectAtIndex:2 withObject: [NSNumber numberWithInt:[[dicStats objectAtIndex:2] intValue]+1]];
 		[dicStats replaceObjectAtIndex:3 withObject: [NSNumber numberWithInt:0]];
@@ -376,18 +384,22 @@
 
 - (void) pocketsphinxDidStartListening {
 	NSLog(@"Pocketsphinx is now listening.");
+    [[self listening] setHidden:NO];
 }
 
 - (void) pocketsphinxDidDetectSpeech {
 	NSLog(@"Pocketsphinx has detected speech.");
+    [[self listening] setHighlighted:YES];
 }
 
 - (void) pocketsphinxDidDetectFinishedSpeech {
 	NSLog(@"Pocketsphinx has detected a period of silence, concluding an utterance.");
+    [[self listening] setHighlighted:NO];
 }
 
 - (void) pocketsphinxDidStopListening {
 	NSLog(@"Pocketsphinx has stopped listening.");
+    [[self listening] setHidden:YES];
 }
 
 - (void) pocketsphinxDidSuspendRecognition {

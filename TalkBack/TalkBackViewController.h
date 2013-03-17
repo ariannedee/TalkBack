@@ -31,8 +31,11 @@
 @property (nonatomic, retain) IBOutlet UIButton *buttonNext;
 @property (nonatomic, retain) IBOutlet UIButton *buttonPrev;
 @property (nonatomic, retain) IBOutlet UIImageView *image;
+@property (nonatomic, retain) IBOutlet UIImageView *listening;
 @property (nonatomic, retain) IBOutlet UILabel *word;
 @property (nonatomic, retain) IBOutlet UILabel *logDisplay;
+@property (nonatomic, retain) IBOutlet UITextView *stats;
+
 @property (nonatomic, retain) PocketsphinxController *pocketsphinxController;
 @property (nonatomic, retain) OpenEarsEventsObserver *openEarsEventsObserver;
 @property (nonatomic, retain) FliteController *fliteController;
