@@ -39,6 +39,8 @@
 @property (nonatomic, retain) Slt *slt;
 @property (nonatomic, retain) ItemCollection *col;
 @property (nonatomic, retain) Item *curItem;
+
+//
 @property (nonatomic, retain) NSMutableArray *fullUserStats;
 @property (nonatomic, retain) NSMutableDictionary *currentUserStats;
 

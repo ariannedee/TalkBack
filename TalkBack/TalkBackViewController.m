@@ -74,8 +74,7 @@
 	BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:myPath];
 	self.currentUserStats = [[NSMutableDictionary alloc] init];
 	if (fileExists)
-	{
-		
+	{		
 		self.fullUserStats = [[NSMutableArray alloc] initWithContentsOfFile:myPath];
 		// loop through the stat to fill the dictionary with only data that is current
 		for (int i = 0; i < [self.fullUserStats count]; i++) {
@@ -93,8 +92,6 @@
 	}else {
 		self.fullUserStats = [[NSMutableArray alloc] init];
 	}
-
-
     
     [super viewDidLoad];
 }
