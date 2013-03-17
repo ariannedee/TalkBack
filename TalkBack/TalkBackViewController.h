@@ -20,15 +20,21 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIButton *button;
+@property (nonatomic, retain) IBOutlet UIButton *cat_button_1;
+@property (nonatomic, retain) IBOutlet UIButton *cat_button_2;
+@property (nonatomic, retain) IBOutlet UIButton *cat_button_3;
+@property (nonatomic, retain) IBOutlet UIButton *cat_button_4;
 @property (nonatomic, retain) IBOutlet UIButton *buttonNext;
 @property (nonatomic, retain) IBOutlet UIButton *buttonPrev;
 @property (nonatomic, retain) IBOutlet UIImageView *image;
+@property (nonatomic, retain) IBOutlet UILabel *word;
 @property(nonatomic, retain) PocketsphinxController *pocketsphinxController;
 @property(nonatomic, retain) OpenEarsEventsObserver *openEarsEventsObserver;
 @property (nonatomic, retain) FliteController *fliteController;
 @property (nonatomic, retain) Slt *slt;
 
 - (IBAction)onButtonPushed:(id)sender;
+- (IBAction)onCatButtonPushed:(id)sender;
 - (IBAction)onButtonNextPushed:(id)sender;
 - (IBAction)onButtonPrevPushed:(id)sender;
 
