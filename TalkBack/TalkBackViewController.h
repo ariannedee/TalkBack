@@ -44,4 +44,7 @@
 - (IBAction)onButtonNextPushed:(id)sender;
 - (IBAction)onButtonPrevPushed:(id)sender;
 
+- (BOOL)isPassedHypothesis:(NSString *)hypothesis;
+
+
 @end

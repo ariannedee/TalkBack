@@ -78,11 +78,20 @@
 // and swap the dictionary for sphinx controller
 - (void)loadViewWithItem: (NSInteger)modelIdx
 {
+	NSInteger size = [[col itemArray] count];
+	buttonPrev.hidden = 0;
+	buttonNext.hidden = 0;
+	if (modelIdx == 0) {
+		buttonPrev.hidden = 1;
+	}
+	if (modelIdx == size - 1) {
+		buttonNext.hidden = 1;
+	}
 	curIdx = modelIdx;
 	self.curItem = [[col itemArray] objectAtIndex:curIdx];
 	
-	NSString *lmPath = [curItem imPath];
-	NSString *dicPath = [curItem dictPath];
+	[self.pocketsphinxController startListeningWithLanguageModelAtPath:[curItem imPath] dictionaryAtPath:[curItem dictPath] languageModelIsJSGF:NO];
+	
 	NSString *name = [curItem displayName];
 	UIImage *displayImage = [[curItem animationArray] objectAtIndex:0];
 	
@@ -91,7 +100,6 @@
 	[self.image setAnimationImages:[curItem animationArray]];
 	self.image.animationDuration = 2;
 	self.image.animationRepeatCount = 1;
-	[self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath languageModelIsJSGF:NO];
 }
 
 // removing item models from the array, and clean up generated lmpath and dicpath files
@@ -108,21 +116,30 @@
 	switch (categoryId) {
 		case 1:
 			self.col = [[ItemCollection alloc] initWithCategory: @"All"];
-			[self loadViewWithItem:0];
 			
 			// call to itemcollection for initializing items
 			break;
 		case 2:
 			// call to itemcollection for initializing items
+			self.col = [[ItemCollection alloc] initWithCategory: @"TOYS"];
+
 			break;
 		case 3:
 			// call to itemcollection for initializing items
+			self.col = [[ItemCollection alloc] initWithCategory: @"FOOD"];
+
 			break;
 		case 4:
 			// call to itemcollection for initializing items
+			self.col = [[ItemCollection alloc] initWithCategory: @"ANIMALS"];
+
 			break;
 		default:
 			break;
+	}
+	if ([[[self col] itemArray] count] > 0)
+	{
+		[self loadViewWithItem:0];
 	}
 }
 
@@ -152,6 +169,19 @@
 	image.hidden = 0;
 }
 
+#pragma mark - Helper functions
+
+- (BOOL)isPassedHypothesis:(NSString *)hypothesis
+{
+	NSArray *hypArray = [hypothesis componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString: @" "]];
+	for (NSString *hyp in hypArray) {
+		if ([[[self curItem] possibleSounds] containsObject:hyp]) {
+			return YES;
+		}
+	}
+	
+	return NO;
+}
 
 #pragma mark - IBActions
 
@@ -160,8 +190,6 @@
 	[self hideCatButtons];
 	[self loadItemModels:((UIButton*)sender).tag];
 }
-// moving to next itemmodel
-
 
 - (IBAction)onButtonNextPushed:(id)sender {
 	[self unloadCurrentItemModel];
@@ -211,7 +239,7 @@
 // ** this is the method that we will work with the most. ** //
 - (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID {
 	NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
-	if(recognitionScore.intValue > -7000 && recognitionScore.intValue < -400 && [hypothesis isEqualToString:[curItem displayName]]){
+	if(recognitionScore.intValue > -7000 && recognitionScore.intValue < -400 && [self isPassedHypothesis:hypothesis]){
 		
 		[image startAnimating];
 	}
@@ -228,6 +256,7 @@
 
 - (void) pocketsphinxDidCompleteCalibration {
 	NSLog(@"Pocketsphinx calibration is complete.");
+	[self.fliteController say:[curItem displayName] withVoice:self.slt];
 }
 
 - (void) pocketsphinxDidStartListening {

@@ -47,14 +47,16 @@
         
         //then breakdown further
         for(NSString *str in lineByLineString){
-            
-            NSArray *wrdArray = [str componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString: @","]];
-            NSString *firstWord = [wrdArray objectAtIndex:0];
-            Item *newItem = [[Item alloc] initWithName:firstWord
-                                                sounds:wrdArray
-                                             animation:firstWord];
-            [self.itemArray addObject:newItem];
-			[newItem release];
+            if (![str isEqualToString:@""]) {
+				NSArray *wrdArray = [str componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString: @","]];
+				NSString *firstWord = [wrdArray objectAtIndex:0];
+				
+				Item *newItem = [[Item alloc] initWithName:firstWord
+													sounds:wrdArray
+												 animation:firstWord];
+				[self.itemArray addObject:newItem];
+				[newItem release];
+			}
         }
     }
     [self setupLanguageDictionary];
