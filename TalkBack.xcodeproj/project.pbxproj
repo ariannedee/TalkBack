@@ -20,12 +20,6 @@
 		55910C0B16F4397900175880 /* TalkBackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55910C0916F4397900175880 /* TalkBackViewController.xib */; };
 		55910C1416F447A700175880 /* duck1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55910C1216F447A700175880 /* duck1.jpg */; };
 		55910C1516F447A700175880 /* duck2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55910C1316F447A700175880 /* duck2.jpg */; };
-		6ED274E916F521C2000E260F /* popcorn_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ED274E316F521C2000E260F /* popcorn_01.png */; };
-		6ED274EA16F521C2000E260F /* popcorn_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ED274E416F521C2000E260F /* popcorn_02.png */; };
-		6ED274EB16F521C2000E260F /* popcorn_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ED274E516F521C2000E260F /* popcorn_03.png */; };
-		6ED274EC16F521C2000E260F /* popcorn_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ED274E616F521C2000E260F /* popcorn_04.png */; };
-		6ED274ED16F521C2000E260F /* popcorn_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ED274E716F521C2000E260F /* popcorn_05.png */; };
-		6ED274EE16F521C2000E260F /* popcorn_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ED274E816F521C2000E260F /* popcorn_06.png */; };
 		6EFD405E16F53E8D00A31DBA /* bb00.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EFD404B16F53E8D00A31DBA /* bb00.png */; };
 		6EFD405F16F53E8D00A31DBA /* bb01.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EFD404C16F53E8D00A31DBA /* bb01.png */; };
 		6EFD406016F53E8D00A31DBA /* bb02.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EFD404D16F53E8D00A31DBA /* bb02.png */; };
@@ -86,12 +80,6 @@
 		55910C0A16F4397900175880 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TalkBackViewController.xib; sourceTree = "<group>"; };
 		55910C1216F447A700175880 /* duck1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = duck1.jpg; path = media/duck1.jpg; sourceTree = "<group>"; };
 		55910C1316F447A700175880 /* duck2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = duck2.jpg; path = media/duck2.jpg; sourceTree = "<group>"; };
-		6ED274E316F521C2000E260F /* popcorn_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popcorn_01.png; path = media/popcorn_01.png; sourceTree = "<group>"; };
-		6ED274E416F521C2000E260F /* popcorn_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popcorn_02.png; path = media/popcorn_02.png; sourceTree = "<group>"; };
-		6ED274E516F521C2000E260F /* popcorn_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popcorn_03.png; path = media/popcorn_03.png; sourceTree = "<group>"; };
-		6ED274E616F521C2000E260F /* popcorn_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popcorn_04.png; path = media/popcorn_04.png; sourceTree = "<group>"; };
-		6ED274E716F521C2000E260F /* popcorn_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popcorn_05.png; path = media/popcorn_05.png; sourceTree = "<group>"; };
-		6ED274E816F521C2000E260F /* popcorn_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popcorn_06.png; path = media/popcorn_06.png; sourceTree = "<group>"; };
 		6EFD404B16F53E8D00A31DBA /* bb00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bb00.png; path = media/bb00.png; sourceTree = "<group>"; };
 		6EFD404C16F53E8D00A31DBA /* bb01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bb01.png; path = media/bb01.png; sourceTree = "<group>"; };
 		6EFD404D16F53E8D00A31DBA /* bb02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bb02.png; path = media/bb02.png; sourceTree = "<group>"; };
@@ -248,12 +236,6 @@
 				6EFD405C16F53E8D00A31DBA /* bb17.png */,
 				6EFD405D16F53E8D00A31DBA /* bb18.png */,
 				8531A6A716F51A7800893996 /* swirl.jpg */,
-				6ED274E316F521C2000E260F /* popcorn_01.png */,
-				6ED274E416F521C2000E260F /* popcorn_02.png */,
-				6ED274E516F521C2000E260F /* popcorn_03.png */,
-				6ED274E616F521C2000E260F /* popcorn_04.png */,
-				6ED274E716F521C2000E260F /* popcorn_05.png */,
-				6ED274E816F521C2000E260F /* popcorn_06.png */,
 				55910C1216F447A700175880 /* duck1.jpg */,
 				55910C1316F447A700175880 /* duck2.jpg */,
 			);
@@ -367,12 +349,6 @@
 				8540789416F44E3F00021164 /* OpenEars2.gram in Resources */,
 				8540789516F44E3F00021164 /* OpenEarsCorpus.txt in Resources */,
 				8531A6A816F51A7800893996 /* swirl.jpg in Resources */,
-				6ED274E916F521C2000E260F /* popcorn_01.png in Resources */,
-				6ED274EA16F521C2000E260F /* popcorn_02.png in Resources */,
-				6ED274EB16F521C2000E260F /* popcorn_03.png in Resources */,
-				6ED274EC16F521C2000E260F /* popcorn_04.png in Resources */,
-				6ED274ED16F521C2000E260F /* popcorn_05.png in Resources */,
-				6ED274EE16F521C2000E260F /* popcorn_06.png in Resources */,
 				4924F45016F516FC002796E1 /* All in Resources */,
 				6EFD405E16F53E8D00A31DBA /* bb00.png in Resources */,
 				6EFD405F16F53E8D00A31DBA /* bb01.png in Resources */,
