@@ -32,12 +32,15 @@
 @property (nonatomic, retain) IBOutlet UIButton *buttonPrev;
 @property (nonatomic, retain) IBOutlet UIImageView *image;
 @property (nonatomic, retain) IBOutlet UILabel *word;
+@property (nonatomic, retain) IBOutlet UILabel *logDisplay;
 @property (nonatomic, retain) PocketsphinxController *pocketsphinxController;
 @property (nonatomic, retain) OpenEarsEventsObserver *openEarsEventsObserver;
 @property (nonatomic, retain) FliteController *fliteController;
 @property (nonatomic, retain) Slt *slt;
 @property (nonatomic, retain) ItemCollection *col;
 @property (nonatomic, retain) Item *curItem;
+@property (nonatomic, retain) NSMutableArray *fullUserStats;
+@property (nonatomic, retain) NSMutableDictionary *currentUserStats;
 
 - (IBAction)onButtonPushed:(id)sender;
 - (IBAction)onCatButtonPushed:(id)sender;

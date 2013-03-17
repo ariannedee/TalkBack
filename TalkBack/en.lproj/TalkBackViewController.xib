@@ -45,7 +45,7 @@
 					<object class="IBUIButton" id="818249833">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">-2147483379</int>
-						<string key="NSFrame">{{331, 967}, {87, 37}}</string>
+						<string key="NSFrame">{{329, 935}, {87, 37}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSNextKeyView" ref="17339367"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -91,7 +91,7 @@
 					<object class="IBUIButton" id="623373518">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">-2147483380</int>
-						<string key="NSFrame">{{111, 967}, {72, 37}}</string>
+						<string key="NSFrame">{{113, 935}, {72, 37}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -110,7 +110,7 @@
 					<object class="IBUIButton" id="429367129">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">-2147483383</int>
-						<string key="NSFrame">{{596, 967}, {72, 37}}</string>
+						<string key="NSFrame">{{597, 935}, {72, 37}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -209,7 +209,7 @@
 					<object class="IBUILabel" id="695343602">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">-2147483355</int>
-						<string key="NSFrame">{{198, 150}, {375, 75}}</string>
+						<string key="NSFrame">{{198, 48}, {375, 75}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -222,7 +222,7 @@
 							<double key="NSSize">36</double>
 							<int key="NSfFlags">16</int>
 						</object>
-						<object class="NSColor" key="IBUITextColor">
+						<object class="NSColor" key="IBUITextColor" id="667038317">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MCAwIDAAA</bytes>
 						</object>
@@ -230,6 +230,27 @@
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
+					</object>
+					<object class="IBUILabel" id="424798276">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">269</int>
+						<string key="NSFrame">{{132, 973}, {616, 21}}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<int key="IBUIContentMode">7</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<string key="IBUIText"/>
+						<object class="NSFont" key="IBUIFont">
+							<string key="NSName">Helvetica</string>
+							<double key="NSSize">12</double>
+							<int key="NSfFlags">16</int>
+						</object>
+						<reference key="IBUITextColor" ref="667038317"/>
+						<reference key="IBUIHighlightedColor" ref="866446369"/>
+						<int key="IBUIBaselineAdjustment">1</int>
+						<float key="IBUIMinimumFontSize">10</float>
 					</object>
 				</object>
 				<string key="NSFrameSize">{768, 1004}</string>
@@ -394,6 +415,14 @@
 					</object>
 					<int key="connectionID">33</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">logDisplay</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="424798276"/>
+					</object>
+					<int key="connectionID">35</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -424,11 +453,12 @@
 							<reference ref="280484999"/>
 							<reference ref="885645070"/>
 							<reference ref="249702542"/>
-							<reference ref="429367129"/>
 							<reference ref="17339367"/>
-							<reference ref="623373518"/>
-							<reference ref="818249833"/>
 							<reference ref="695343602"/>
+							<reference ref="429367129"/>
+							<reference ref="818249833"/>
+							<reference ref="623373518"/>
+							<reference ref="424798276"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -477,6 +507,11 @@
 						<reference key="object" ref="695343602"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">34</int>
+						<reference key="object" ref="424798276"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -501,6 +536,8 @@
 					<string>23.IBViewBoundsToFrameTransform</string>
 					<string>32.IBPluginDependency</string>
 					<string>32.IBViewBoundsToFrameTransform</string>
+					<string>34.IBPluginDependency</string>
+					<string>34.IBViewBoundsToFrameTransform</string>
 					<string>4.IBPluginDependency</string>
 					<string>4.IBUIButtonInspectorSelectedStateConfigurationMetadataKey</string>
 					<string>4.IBViewBoundsToFrameTransform</string>
@@ -513,11 +550,11 @@
 					<string>UIResponder</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABCtAAAxEHAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABC3gAAxHqAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABEEAAAxEHAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABEFQAAxHqAAA</bytes>
 					</object>
 					<string>{{339, 0}, {783, 856}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -539,12 +576,16 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDOwAAxBxAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDRgAAwxkAAA</bytes>
+					</object>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABDcwAAxHKAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<real value="0.0"/>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDpYAAxIFgAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDpYAAxHqAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -568,7 +609,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">33</int>
+			<int key="maxID">35</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -634,6 +675,7 @@
 							<string>cat_button_3</string>
 							<string>cat_button_4</string>
 							<string>image</string>
+							<string>logDisplay</string>
 							<string>word</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -646,6 +688,7 @@
 							<string>UIButton</string>
 							<string>UIButton</string>
 							<string>UIImageView</string>
+							<string>UILabel</string>
 							<string>UILabel</string>
 						</object>
 					</object>
@@ -661,6 +704,7 @@
 							<string>cat_button_3</string>
 							<string>cat_button_4</string>
 							<string>image</string>
+							<string>logDisplay</string>
 							<string>word</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -696,6 +740,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">image</string>
 								<string key="candidateClassName">UIImageView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">logDisplay</string>
+								<string key="candidateClassName">UILabel</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">word</string>

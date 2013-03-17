@@ -21,12 +21,15 @@
 @synthesize buttonPrev;
 @synthesize image;
 @synthesize word;
+@synthesize logDisplay;
 @synthesize openEarsEventsObserver;
 @synthesize pocketsphinxController;
 @synthesize fliteController;
 @synthesize slt;
 @synthesize col;
 @synthesize curItem;
+@synthesize fullUserStats;
+@synthesize currentUserStats;
 
 - (void)dealloc
 {
@@ -41,6 +44,14 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+- (NSString *) saveFilePath
+{
+	NSArray *path =	NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	//preferably the filename here is @"[username]_stats.plist"
+	return [[path objectAtIndex:0] stringByAppendingPathComponent:@"user_stats.plist"]; 
+	
+}
+
 #pragma mark - View lifecycle
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -48,6 +59,33 @@
 {
 	// display categories
 	[self.openEarsEventsObserver setDelegate:self];
+	
+	
+	NSString *myPath = [self saveFilePath];
+	BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:myPath];
+	self.currentUserStats = [[NSMutableDictionary alloc] init];
+	if (fileExists)
+	{
+		
+		self.fullUserStats = [[NSMutableArray alloc] initWithContentsOfFile:myPath];
+		// loop through the stat to fill the dictionary with only data that is current
+		for (int i = 0; i < [self.fullUserStats count]; i++) {
+			// stats[0] = word, [1]=level, [2]=#ofattempt, [3]=#ofsuccess, [4]=consecutiveFail, [5]=isCurrent
+			NSArray *stats = [self.fullUserStats objectAtIndex:i];
+			if ([[stats objectAtIndex:5] intValue] == 1) {
+				NSMutableArray *dicStats = [[NSMutableArray alloc] initWithObjects:[stats objectAtIndex:1], 
+									 [stats objectAtIndex:2],
+									 [stats objectAtIndex:3],
+									 [stats objectAtIndex:4],
+									 [NSNumber numberWithInt:i], nil];
+				[self.currentUserStats setObject:dicStats forKey:[stats objectAtIndex:0]];
+			}
+		}
+	}else {
+		self.fullUserStats = [[NSMutableArray alloc] init];
+	}
+
+
     
     [super viewDidLoad];
 }
@@ -79,6 +117,7 @@
 - (void)loadViewWithItem: (NSInteger)modelIdx
 {
 	NSInteger size = [[col itemArray] count];
+	NSInteger level = 0;
 	buttonPrev.hidden = 0;
 	buttonNext.hidden = 0;
 	if (modelIdx == 0) {
@@ -89,9 +128,20 @@
 	}
 	curIdx = modelIdx;
 	self.curItem = [[col itemArray] objectAtIndex:curIdx];
-	
 	[self.pocketsphinxController startListeningWithLanguageModelAtPath:[curItem imPath] dictionaryAtPath:[curItem dictPath] languageModelIsJSGF:NO];
 	
+	// getting level from the stored user stats
+	if ([self.currentUserStats objectForKey:[self.curItem displayName]] != nil) {
+		level = [[[self.currentUserStats objectForKey:[self.curItem displayName]] objectAtIndex:0] intValue];
+	}else {
+		NSMutableArray *dicStats = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:level],
+															[NSNumber numberWithInt:0],
+															[NSNumber numberWithInt:0],
+															[NSNumber numberWithInt:0],
+															[NSNumber numberWithInt:-1], nil];
+		[self.currentUserStats setObject:dicStats forKey:[self.curItem displayName]];
+	}
+
 	NSString *name = [curItem displayName];
 	UIImage *displayImage = [[curItem animationArray] objectAtIndex:0];
 	
@@ -105,6 +155,30 @@
 // removing item models from the array, and clean up generated lmpath and dicpath files
 - (void)unloadItemModels
 {
+	// try plist write out here for now
+	// need to move data from currentUserStats(dict) to fullUserStats(array)
+	// then write out the array
+	NSArray *keys = [self.currentUserStats allKeys];
+	for (NSString *key in keys){
+		NSArray *dicStats = [self.currentUserStats objectForKey:key];
+		NSInteger fullStatIdx = [[dicStats objectAtIndex:4] intValue];
+		
+		NSMutableArray *aryStats = [[NSMutableArray alloc] initWithObjects: key,
+							 [dicStats objectAtIndex:0],
+							 [dicStats objectAtIndex:1],
+							 [dicStats objectAtIndex:2],
+							 [dicStats objectAtIndex:3],
+							 [NSNumber numberWithInt:1], nil];
+		if (fullStatIdx == -1) {
+			// add to array as a new entry
+			[self.fullUserStats addObject:aryStats];
+		}else {
+			// get and update the entry in the array
+			[self.fullUserStats replaceObjectAtIndex:fullStatIdx withObject:aryStats];
+		}
+
+	}
+	[self.fullUserStats writeToFile:[self saveFilePath] atomically:YES];
 	[self setCol:nil];
 }
 
@@ -239,11 +313,45 @@
 // ** this is the method that we will work with the most. ** //
 - (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID {
 	NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
+	self.logDisplay.text = [NSString stringWithFormat:@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID];
+	
+	NSMutableArray *dicStats = [self.currentUserStats objectForKey:[curItem displayName]];
+	[dicStats replaceObjectAtIndex:1 withObject: [NSNumber numberWithInt:[[dicStats objectAtIndex:1] intValue]+1]];
+	
 	if(recognitionScore.intValue > -7000 && recognitionScore.intValue < -400 && [self isPassedHypothesis:hypothesis]){
 		
+		[dicStats replaceObjectAtIndex:2 withObject: [NSNumber numberWithInt:[[dicStats objectAtIndex:2] intValue]+1]];
+		[dicStats replaceObjectAtIndex:3 withObject: [NSNumber numberWithInt:0]];
+		NSInteger level = [[dicStats objectAtIndex:2] intValue];
+		if (level > 5) { // threshold for moving to new level 
+			NSInteger fullStatIdx = [[dicStats objectAtIndex:4] intValue];
+			
+			NSMutableArray *aryStats = [[NSMutableArray alloc] initWithObjects: [self.curItem displayName],
+								 [dicStats objectAtIndex:0],
+								 [dicStats objectAtIndex:1],
+								 [dicStats objectAtIndex:2],
+								 [dicStats objectAtIndex:3],
+								 [NSNumber numberWithInt:0], nil];
+			if (fullStatIdx == -1) {
+				// add to array as a new entry
+				[self.fullUserStats addObject:aryStats];
+			}else {
+				// get and update the entry in the array
+				[self.fullUserStats replaceObjectAtIndex:fullStatIdx withObject:aryStats];
+			}
+			dicStats = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:(level+1)],
+								 [NSNumber numberWithInt:0],
+								 [NSNumber numberWithInt:0],
+								 [NSNumber numberWithInt:0],
+								 [NSNumber numberWithInt:-1], nil];
+			[self.currentUserStats setObject:dicStats forKey:[self.curItem displayName]];
+		}
 		[image startAnimating];
 	}
     else {
+
+		[dicStats replaceObjectAtIndex:3 withObject: [NSNumber numberWithInt:[[dicStats objectAtIndex:3] intValue]+1]];
+		
 		[self.fliteController say:[curItem displayName] withVoice:self.slt];
 		[image setHighlighted:NO];
 
