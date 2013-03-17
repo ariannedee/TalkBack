@@ -25,8 +25,8 @@
 @synthesize pocketsphinxController;
 @synthesize fliteController;
 @synthesize slt;
-@synthesize itemModelArray;
-
+@synthesize col;
+@synthesize curItem;
 
 - (void)dealloc
 {
@@ -43,27 +43,12 @@
 
 #pragma mark - View lifecycle
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-	// OpenEar Language model generator
-        //lmGenerator = [[LanguageModelGenerator alloc] init];
-		self.itemModelArray = [[NSArray alloc] init];
-		[self.openEarsEventsObserver setDelegate:self];
-    }
-    return self;
-}
-
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    ItemCollection *col = [[ItemCollection alloc] initWithCategory: @"All"];
 	// display categories
-	
-    for (Item *item in [col itemArray])
-    {
-        NSLog(@"name: %@, dictionary count: %i",[item displayName], [[item possibleSounds] count]);
-    }
+	[self.openEarsEventsObserver setDelegate:self];
+    
     [super viewDidLoad];
 }
 
@@ -85,7 +70,7 @@
 // removes item model from the view
 - (void)unloadCurrentItemModel
 {
-	
+	//self.curItem = nil;
 	[self.pocketsphinxController stopListening];
 }
 
@@ -93,17 +78,26 @@
 // and swap the dictionary for sphinx controller
 - (void)loadViewWithItem: (NSInteger)modelIdx
 {
-	NSString* lmPath = @""; // path from model
-	NSString* dictPath = @""; // path from model
-	[self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dictPath languageModelIsJSGF:NO];
+	curIdx = modelIdx;
+	self.curItem = [[col itemArray] objectAtIndex:curIdx];
 	
+	NSString *lmPath = [curItem imPath];
+	NSString *dicPath = [curItem dictPath];
+	NSString *name = [curItem displayName];
+	UIImage *displayImage = [[curItem animationArray] objectAtIndex:0];
 	
+	self.word.text = name;
+	[self.image setImage:displayImage];
+	[self.image setAnimationImages:[curItem animationArray]];
+	self.image.animationDuration = 2;
+	self.image.animationRepeatCount = 1;
+	[self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath languageModelIsJSGF:NO];
 }
 
 // removing item models from the array, and clean up generated lmpath and dicpath files
 - (void)unloadItemModels
 {
-	
+	[self setCol:nil];
 }
 
 // Loads item models of specific category
@@ -113,6 +107,9 @@
 {
 	switch (categoryId) {
 		case 1:
+			self.col = [[ItemCollection alloc] initWithCategory: @"All"];
+			[self loadViewWithItem:0];
+			
 			// call to itemcollection for initializing items
 			break;
 		case 2:
@@ -127,12 +124,6 @@
 		default:
 			break;
 	}
-	/* sample data sounds from text?
-	 NSArray *words1 = [NSArray arrayWithObjects:@"BALLS",@"B",@"ALL",@"BA",@"BU",@"BO", nil];
-	 */
-	
-	 //NSArray *paths = createDictionary(words1);
-	
 }
 
 - (void) displayCatButtons
@@ -173,16 +164,18 @@
 
 
 - (IBAction)onButtonNextPushed:(id)sender {
-	[image setImage:[UIImage imageNamed:@"swirl.jpg"]];
+	[self unloadCurrentItemModel];
+	[self loadViewWithItem:curIdx+1];
 }
 
 - (IBAction)onButtonPrevPushed:(id)sender {
-	[image setImage:[UIImage imageNamed:@"swirl.jpg"]];
+	[self unloadCurrentItemModel];
+	[self loadViewWithItem:curIdx-1];
 }
 
-
-
 - (IBAction)onButtonPushed:(id)sender {
+	[self unloadCurrentItemModel];
+	[self unloadItemModels];
     [self displayCatButtons];
 }
 
@@ -218,11 +211,12 @@
 // ** this is the method that we will work with the most. ** //
 - (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID {
 	NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
-	if(recognitionScore.intValue > -600 && recognitionScore.intValue < -10 && [hypothesis isEqualToString:@"BALLS"]){
-		[image setHighlighted:YES];
+	if(recognitionScore.intValue > -7000 && recognitionScore.intValue < -400 && [hypothesis isEqualToString:[curItem displayName]]){
+		
+		[image startAnimating];
 	}
     else {
-		[self.fliteController say:@"BALLS" withVoice:self.slt];
+		[self.fliteController say:[curItem displayName] withVoice:self.slt];
 		[image setHighlighted:NO];
 
 	}

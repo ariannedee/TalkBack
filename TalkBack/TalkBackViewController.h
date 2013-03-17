@@ -12,11 +12,15 @@
 #import <OpenEars/OpenEarsEventsObserver.h>
 #import <OpenEars/PocketsphinxController.h>
 
+@class ItemCollection;
+@class Item;
+
 @interface TalkBackViewController : UIViewController <OpenEarsEventsObserverDelegate> {
 	OpenEarsEventsObserver *openEarsEventsObserver;
 	PocketsphinxController *pocketsphinxController;
 	FliteController *fliteController;
 	Slt *slt;
+	NSInteger curIdx;
 }
 
 @property (nonatomic, retain) IBOutlet UIButton *button;
@@ -28,12 +32,12 @@
 @property (nonatomic, retain) IBOutlet UIButton *buttonPrev;
 @property (nonatomic, retain) IBOutlet UIImageView *image;
 @property (nonatomic, retain) IBOutlet UILabel *word;
-@property(nonatomic, retain) PocketsphinxController *pocketsphinxController;
-@property(nonatomic, retain) OpenEarsEventsObserver *openEarsEventsObserver;
+@property (nonatomic, retain) PocketsphinxController *pocketsphinxController;
+@property (nonatomic, retain) OpenEarsEventsObserver *openEarsEventsObserver;
 @property (nonatomic, retain) FliteController *fliteController;
 @property (nonatomic, retain) Slt *slt;
-
-@property (nonatomic, retain) NSArray *itemModelArray;
+@property (nonatomic, retain) ItemCollection *col;
+@property (nonatomic, retain) Item *curItem;
 
 - (IBAction)onButtonPushed:(id)sender;
 - (IBAction)onCatButtonPushed:(id)sender;

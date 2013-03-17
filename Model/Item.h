@@ -13,11 +13,13 @@
 @property(nonatomic, retain) NSString *displayName; 
 @property(nonatomic, retain) NSArray *possibleSounds;
 @property(nonatomic, retain) NSString *animName;
-@property(nonatomic, retain) NSMutableArray *animationImages;
+@property(nonatomic, retain) NSMutableArray *animationArray;
 @property(nonatomic, retain) NSString *imPath;
 @property(nonatomic, retain) NSString *dictPath;
 
 -(id) initWithName:(NSString*)displayName_
             sounds:(NSArray*)possibleSounds_
          animation:(NSString*)animName_;
+
+- (void)createAnimation;
 @end

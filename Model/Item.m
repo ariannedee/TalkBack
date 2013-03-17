@@ -13,7 +13,7 @@
 @synthesize displayName;
 @synthesize possibleSounds;
 @synthesize animName;
-@synthesize animationImages;
+@synthesize animationArray;
 @synthesize imPath;
 @synthesize dictPath;
 
@@ -28,17 +28,24 @@
         [self setPossibleSounds:possibleSounds_];
         [self setAnimName:animName_];
         
-        animationImages = [[NSMutableArray alloc] initWithObjects:nil];
+        animationArray = [[NSMutableArray alloc] initWithObjects:nil];
         imPath = nil;
         dictPath = nil;
         
+		[self createAnimation];
     }
     return self;
 }
 
 
 -(void)dealloc{
-    self.displayName = nil;
+	[self setDictPath:nil];
+	[self setImPath:nil];
+	[self setAnimationArray:nil];
+	[self setDisplayName:nil];
+	[self setAnimName:nil];
+	[self setPossibleSounds:nil];
+	
     [super dealloc];
 }
 
@@ -62,11 +69,8 @@
             }
         }
     }
-    self.animationImages = animImages;
+    [self setAnimationArray:animImages];
     [animImages release];
 }
-
-
-
 
 @end
